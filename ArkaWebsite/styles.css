@@ -24,12 +24,21 @@ header {
   background: #181819;
 }
 .layer {
+  @apply w-10 h-3;
   background: linear-gradient(90deg, #03bf77 0%, #f0f076 100%);
 }
 .nav-text {
   @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline;
 }
 .arka-builds-section {
-  @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start self-stretch p-20;
+  @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start w-full;
   background: #09090a;
+}
+.arka-build-headers {
+  @apply text-white text-start text-5xl not-italic font-bold leading-[48px];
+  font-family: Inter;
+}
+.arka-build-grid {
+  @apply flex flex-col justify-center items-start gap-2 w-full p-6 rounded-2xl;
+  background: rgba(255, 255, 255, 0.06);
 }
