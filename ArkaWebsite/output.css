@@ -554,16 +554,20 @@ video {
   display: none;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-full {
@@ -574,16 +578,12 @@ video {
   height: 100vh;
 }
 
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[1000px\] {
-  height: 1000px;
-}
-
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -594,16 +594,20 @@ video {
   max-width: 1500px;
 }
 
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .justify-center {
@@ -618,6 +622,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -628,26 +636,29 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.rounded-\[24px_24px_0px_0px\] {
+  border-radius: 24px 24px 0px 0px;
+}
+
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.p-10 {
-  padding: 2.5rem;
+.bg-\[\#f3f3f300\] {
+  background-color: #f3f3f300;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.p-20 {
+  padding: 5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
+.font-nunito {
+  font-family: "Nunito", sans-serif;
 }
 
 .text-2xl {
@@ -659,12 +670,42 @@ video {
   font-size: 100px;
 }
 
+.text-\[64px\] {
+  font-size: 64px;
+}
+
+.text-\[90px\] {
+  font-size: 90px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
 .font-light {
   font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .not-italic {
@@ -677,6 +718,19 @@ video {
 
 .leading-\[33px\] {
   line-height: 33px;
+}
+
+.leading-\[72px\] {
+  line-height: 72px;
+}
+
+.leading-\[normal\] {
+  line-height: normal;
+}
+
+.text-\[\#09090A\] {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 10 / var(--tw-text-opacity, 1));
 }
 
 .text-\[rgba\(255\2c 255\2c 255\2c 0\.90\)\] {
@@ -718,6 +772,55 @@ header {
   z-index: 1000;
 }
 
-.hover\:underline:hover {
+.platform-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1.5rem;
+  padding: 5rem;
+  --tw-shadow: 100px 100px 100px 100px rgba(0,0,0,0.04);
+  --tw-shadow-colored: 100px 100px 100px 100px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background: #fff;
+}
+
+.agents-grid {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #181819;
+}
+
+.layer {
+  background: linear-gradient(90deg, #03bf77 0%, #f0f076 100%);
+}
+
+.nav-text {
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: rgba(255,255,255,0.80);
+}
+
+.nav-text:hover {
   text-decoration-line: underline;
+}
+
+.arka-builds-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 5rem;
+  --tw-shadow: 100px 100px 100px 0px rgba(0,0,0,0.04);
+  --tw-shadow-colored: 100px 100px 100px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background: #09090a;
 }

@@ -6,10 +6,19 @@
     <title>ARKA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="w-full h-full">
-      <div class="bg-[#000] w-full justify-center flex h-screen p-10">
+      <!-- Main Section -->
+      <div class="bg-[#000] w-full justify-center flex h-screen p-20">
         <div class="max-w-[1500px] flex flex-col">
           <header class="flex justify-between">
             <div class="">
@@ -17,11 +26,11 @@
             </div>
             <div class="flex gap-10">
               <nav class="flex gap-6">
-                <a href="#" class="hover:underline">AI Developer</a>
-                <a href="#" class="hover:underline">Interchain Agent</a>
-                <a href="#" class="hover:underline">About Us</a>
-                <a href="#" class="hover:underline">Docs</a>
-                <a href="#" class="hover:underline">Blogs</a>
+                <a href="#" class="nav-text">AI Developer</a>
+                <a href="#" class="nav-text">Interchain Agent</a>
+                <a href="#" class="nav-text">About Us</a>
+                <a href="#" class="nav-text">Docs</a>
+                <a href="#" class="nav-text">Blogs</a>
               </nav>
               <div class="flex space-x-4">
                 <img
@@ -41,13 +50,13 @@
             <div class="gap-10 flex flex-col justify-center items-start">
               <div class="gap-6 flex flex-col">
                 <h1
-                  class="text-white text-[100px] not-italic font-extrabold leading-[120px]"
+                  class="text-white text-[100px] not-italic font-extrabold leading-[120px] font-inter"
                 >
                   Liberating AI <br />
                   Sovereignty
                 </h1>
                 <p
-                  class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-light leading-[33px]"
+                  class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-light leading-[33px] font-nunito"
                 >
                   Unified Platform for Verifiable AI Execution, Orchestration,
                   and Multi-Agent Consensus
@@ -65,7 +74,177 @@
           </section>
         </div>
       </div>
+      <!-- Platform -->
+      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
+        <div class="max-w-[1500px] flex platform-section">
+          <div class="flex gap-10">
+            <div class="flex flex-col gap-6">
+              <div
+                class="text-[#09090A] text-[90px] not-italic font-thin leading-[120px] font-inter"
+              >
+                The <span class="font-bold">Unified platform</span> for <br />
+                <span class="font-bold">Sovereign</span>
+                <br />
+                and
+                <span class="font-bold">DeAI</span>
+              </div>
+              <div
+                class="text-[#09090A] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+              >
+                Build, train, and deploy AI agents using <br />
+                decentralised compute and diverse datasets, <br />
+                enhancing flexibility and scalability.
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Agent Consensus Engine
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple
+                  </p>
+                </div>
+              </div>
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Agent Consensus Engine
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple
+                  </p>
+                </div>
+              </div>
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Comprehensive Integration
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple...
+                  </p>
+                </div>
+              </div>
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Agent Marketplace
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple...
+                  </p>
+                </div>
+              </div>
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Privacy-First Architecture
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple...
+                  </p>
+                </div>
+              </div>
+              <div class="agents-grid gap-6">
+                <img
+                  src="/ArkaWebsite/images/agent-icon.svg"
+                  alt="Icon"
+                  class="h-8 w-8"
+                />
+                <div class="gap-2 flex flex-col">
+                  <h3
+                    class="text-white text-base not-italic font-bold leading-[normal] font-inter"
+                  >
+                    Ownership & Monetization
+                  </h3>
+                  <p
+                    class="text-[rgba(255,255,255,0.90)] text-sm not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    A secure, open marketplace for AI agents, accessible across
+                    multiple...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- ARKA BUILDS -->
+      <div class="bg-[#f3f3f300] w-full flex justify-center h-screen p-20">
+        <div class="max-w-[1500px] arka-builds-section w-full rounded-[24px_24px_0px_0px]">
+          <div class="flex justify-between w-full items-start">
+            <!-- Left Content -->
+            <div
+              class="text-white text-[64px] not-italic font-bold leading-[72px] max-w-[50%] font-inter"
+            >
+              Arka builds the
+              <br />
+              DeAI Stack.
+            </div>
+            <!-- Right Content -->
+            <div
+              class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-extralight leading-[33px] max-w-[50%] font-nunito"
+            >
+              Build, train, and deploy AI agents using <br />
+              decentralised compute and diverse datasets, <br />
+              enhancing flexibility and scalability.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

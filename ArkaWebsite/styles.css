@@ -15,3 +15,21 @@ header {
   top: 0;
   z-index: 1000;
 }
+.platform-section {
+  @apply shadow-[100px_100px_100px_100px_rgba(0,0,0,0.04)] flex flex-col items-start w-full p-20 rounded-3xl;
+  background: #fff;
+}
+.agents-grid {
+  @apply flex flex-col w-full p-6 rounded-2xl;
+  background: #181819;
+}
+.layer {
+  background: linear-gradient(90deg, #03bf77 0%, #f0f076 100%);
+}
+.nav-text {
+  @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline;
+}
+.arka-builds-section {
+  @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start self-stretch p-20;
+  background: #09090a;
+}
