@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.mainLandingBg {
+  /* background-image: url("/ArkaWebsite/images/chain.png"); */
+  background-size: contain;
+  height: 90vh;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 .custom-btn {
   background: linear-gradient(90deg, #7af861 0%, #03bf77 100%);
   font-family: Nunito;
@@ -31,7 +39,7 @@ header {
   @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline;
 }
 .arka-builds-section {
-  @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start w-full;
+  @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start w-full p-20;
   background: #09090a;
 }
 .arka-build-headers {
@@ -41,4 +49,60 @@ header {
 .arka-build-grid {
   @apply flex flex-col justify-center items-start gap-2 w-full p-6 rounded-2xl;
   background: rgba(255, 255, 255, 0.06);
+}
+.divider {
+  @apply w-[100px] h-px shrink-0;
+  background: rgba(24, 24, 25, 0.2);
+}
+
+.roadmap-container {
+  @apply max-w-[1200px] text-center mx-auto my-[50px] p-5;
+}
+.roadmap-header h1 {
+  @apply text-[2.5em] mb-2.5;
+}
+.roadmap-header p {
+  @apply text-[1.2em] text-[#555] mb-10;
+}
+.timeline {
+  @apply relative flex justify-between items-center max-w-[1000px] mx-auto my-0 px-0 py-5 before:content-[""] before:absolute before:h-0.5 before:z-[1] before:top-2/4 before:inset-x-[5%];
+}
+.timeline::before {
+  background: #ddd;
+}
+.timeline-item {
+  @apply relative text-center z-[2];
+}
+.timeline-circle {
+  @apply flex w-16 h-16 justify-center items-center gap-2.5 px-6 py-6 rounded-full border-4 border-solid border-[#03BF77];
+  background: linear-gradient(
+    270deg,
+    rgba(3, 191, 119, 0.6) 0%,
+    rgba(122, 248, 97, 0.6) 100%
+  );
+}
+
+.timeline-content {
+  @apply flex w-[280px] flex-col gap-4 p-6 rounded-3xl;
+  background: #f3f3f3;
+}
+.faqs-grid {
+  @apply flex  gap-2 w-full p-6 rounded-2xl;
+  background: #181819;
+}
+.header {
+  @apply text-[#09090A] text-[64px] not-italic font-bold leading-[90px] font-inter;
+}
+.community-grid {
+  @apply flex w-full justify-between items-center backdrop-blur-[20px] px-20 py-10 rounded-3xl;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(204, 204, 204, 0.08) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+.social-cards {
+  @apply flex justify-center items-center w-full gap-10 px-24 py-6 rounded-3xl;
+  background: #f3f3f3;
 }
