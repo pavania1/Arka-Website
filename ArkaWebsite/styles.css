@@ -51,27 +51,8 @@ header {
   background: rgba(255, 255, 255, 0.06);
 }
 .divider {
-  @apply w-[100px] h-px shrink-0;
+  @apply w-[90px] h-px shrink-0;
   background: rgba(24, 24, 25, 0.2);
-}
-
-.roadmap-container {
-  @apply max-w-[1200px] text-center mx-auto my-[50px] p-5;
-}
-.roadmap-header h1 {
-  @apply text-[2.5em] mb-2.5;
-}
-.roadmap-header p {
-  @apply text-[1.2em] text-[#555] mb-10;
-}
-.timeline {
-  @apply relative flex justify-between items-center max-w-[1000px] mx-auto my-0 px-0 py-5 before:content-[""] before:absolute before:h-0.5 before:z-[1] before:top-2/4 before:inset-x-[5%];
-}
-.timeline::before {
-  background: #ddd;
-}
-.timeline-item {
-  @apply relative text-center z-[2];
 }
 .timeline-circle {
   @apply flex w-16 h-16 justify-center items-center gap-2.5 px-6 py-6 rounded-full border-4 border-solid border-[#03BF77];
@@ -81,7 +62,6 @@ header {
     rgba(122, 248, 97, 0.6) 100%
   );
 }
-
 .timeline-content {
   @apply flex w-[280px] flex-col gap-4 p-6 rounded-3xl;
   background: #f3f3f3;
@@ -105,4 +85,38 @@ header {
 .social-cards {
   @apply flex justify-center items-center w-full gap-10 px-24 py-6 rounded-3xl;
   background: #f3f3f3;
+}
+.interchainAgent-text {
+  @apply bg-clip-text text-lg not-italic font-medium leading-[33px];
+  background: linear-gradient(180deg, #03bf77 0%, #7af861 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+}
+.myVideop {
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+  @apply md:h-[100%];
+}
+
+.hover-box {
+  transition: transform 0.3s ease;
+}
+
+/* Specific hover effects for each box */
+.box1:hover {
+  transform: translate(10px, -10px); /* Move down and right */
+}
+
+.box2:hover {
+  transform: translate(-10px, 10px); /* Move up and left */
+}
+
+.box3:hover {
+  transform: translate(15px, -15px); /* Move more dramatically */
+}
+
+.box4:hover {
+  transform: translate(-15px, 15px); /* Move opposite direction */
 }
