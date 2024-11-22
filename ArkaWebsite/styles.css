@@ -16,7 +16,7 @@
   @apply flex justify-center  items-center gap-2.5 text-black text-base not-italic font-medium leading-[normal] px-6 py-2.5 rounded-lg;
 }
 header {
-  background: #000;
+  /* background: #000; */
   color: white;
   padding: 1rem 0;
   position: sticky;

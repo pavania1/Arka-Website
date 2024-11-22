@@ -1080,7 +1080,7 @@ video {
 }
 
 header {
-  background: #000;
+  /* background: #000; */
   color: white;
   padding: 1rem 0;
   position: sticky;
