@@ -36,7 +36,7 @@ header {
   background: linear-gradient(90deg, #03bf77 0%, #f0f076 100%);
 }
 .nav-text {
-  @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline;
+  @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline flex;
 }
 .arka-builds-section {
   @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start w-full p-20;
@@ -51,7 +51,7 @@ header {
   background: rgba(255, 255, 255, 0.06);
 }
 .divider {
-  @apply w-[90px] h-px shrink-0;
+  @apply w-[138px] h-px shrink-0;
   background: rgba(24, 24, 25, 0.2);
 }
 .timeline-circle {

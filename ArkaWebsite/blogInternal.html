@@ -22,34 +22,49 @@
         <div
           class="bg-[url('/ArkaWebsite/images/blog-bg.svg')] bg-no-repeat bg-cover w-full h-full"
         >
-          <div class="max-w-[1350px] mx-auto w-full h-full flex flex-col">
+          <div class="p-20 mx-auto w-full h-full flex flex-col">
             <!-- Header -->
-            <header class="flex justify-between w-full items-center py-20">
-              <div>
-                <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
-              </div>
-              <div class="flex gap-10 items-center">
-                <nav class="flex gap-6">
-                  <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
-                  <a href="#" class="nav-text">Interchain Agent</a>
-                  <a href="aboutus.html" class="nav-text">About Us</a>
-                  <a href="#" class="nav-text">Docs</a>
-                  <a href="blogs.html" class="nav-text">Blogs</a>
-                </nav>
-                <div class="flex space-x-4">
-                  <img
-                    src="/ArkaWebsite/images/twitter.png"
-                    alt="twitter-logo"
-                    class="h-6 w-6"
-                  />
-                  <img
-                    src="/ArkaWebsite/images/discord.png"
-                    alt="discord-logo"
-                    class="h-6 w-6"
-                  />
+            <header class="flex justify-between w-full items-center">
+                <div>
+                  <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
                 </div>
-              </div>
-            </header>
+                <div class="flex gap-10 items-center">
+                  <nav class="flex gap-6">
+                    <a href="aboutus.html" class="nav-text">About Us</a>
+                    <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
+                    <a href="blogs.html" class="nav-text">Blogs</a>
+                    <a href="#" class="nav-text">
+                      Whitepaper
+                      <img
+                        src="/ArkaWebsite/images/redirect-icon.svg"
+                        alt="redirect-icon"
+                        class="w-6 h-6"
+                      />
+                    </a>
+  
+                    <a href="#" class="nav-text"
+                      >Docs
+                      <img
+                        src="/ArkaWebsite/images/redirect-icon.svg"
+                        alt="redirect-icon"
+                        class="w-6 h-6"
+                      />
+                    </a>
+                  </nav>
+                  <div class="flex space-x-4">
+                    <img
+                      src="/ArkaWebsite/images/twitter.png"
+                      alt="twitter-logo"
+                      class="h-6 w-6"
+                    />
+                    <img
+                      src="/ArkaWebsite/images/discord.png"
+                      alt="discord-logo"
+                      class="h-6 w-6"
+                    />
+                  </div>
+                </div>
+              </header>
 
             <!-- Centered Content Section -->
             <div class="flex-grow flex justify-center items-center">
@@ -57,8 +72,8 @@
                 <p
                   class="text-white text-[54px] not-italic font-bold leading-[80px] font-inter"
                 >
-                  Unified Platform for Verifiable AI Execution, Orchestration,
-                  and Multi-Agent Consensus
+                  Unified Platform for Verifiable AI Execution,
+                  <br />Orchestration, and Multi-Agent Consensus
                 </p>
                 <p
                   class="text-white text-lg not-italic font-normal leading-[normal] font-nunito"
@@ -75,7 +90,10 @@
       <div class="bg-white p-20">
         <div class="max-w-[1300px] mx-auto w-full h-full flex flex-col">
           <div class="flex flex-col gap-10">
-            <div class="flex items-center">
+            <div
+              class="flex items-center cursor-pointer"
+              onclick="window.location.href='blogs.html'"
+            >
               <img
                 src="/ArkaWebsite/images/back-icon.svg"
                 alt="back-arrow-icon"
