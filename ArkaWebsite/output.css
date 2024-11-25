@@ -574,6 +574,22 @@ video {
   top: -20px;
 }
 
+.top-\[0px\] {
+  top: 0px;
+}
+
+.top-\[-50px\] {
+  top: -50px;
+}
+
+.top-\[-60px\] {
+  top: -60px;
+}
+
+.top-\[-70px\] {
+  top: -70px;
+}
+
 .z-0 {
   z-index: 0;
 }
