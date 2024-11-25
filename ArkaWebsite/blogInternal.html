@@ -25,46 +25,46 @@
           <div class="p-20 mx-auto w-full h-full flex flex-col">
             <!-- Header -->
             <header class="flex justify-between w-full items-center">
-                <div>
-                  <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
-                </div>
-                <div class="flex gap-10 items-center">
-                  <nav class="flex gap-6">
-                    <a href="aboutus.html" class="nav-text">About Us</a>
-                    <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
-                    <a href="blogs.html" class="nav-text">Blogs</a>
-                    <a href="#" class="nav-text">
-                      Whitepaper
-                      <img
-                        src="/ArkaWebsite/images/redirect-icon.svg"
-                        alt="redirect-icon"
-                        class="w-6 h-6"
-                      />
-                    </a>
-  
-                    <a href="#" class="nav-text"
-                      >Docs
-                      <img
-                        src="/ArkaWebsite/images/redirect-icon.svg"
-                        alt="redirect-icon"
-                        class="w-6 h-6"
-                      />
-                    </a>
-                  </nav>
-                  <div class="flex space-x-4">
+              <div>
+                <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
+              </div>
+              <div class="flex gap-10 items-center">
+                <nav class="flex gap-6">
+                  <a href="aboutus.html" class="nav-text">About Us</a>
+                  <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
+                  <a href="blogs.html" class="nav-text">Blogs</a>
+                  <a href="#" class="nav-text">
+                    Whitepaper
                     <img
-                      src="/ArkaWebsite/images/twitter.png"
-                      alt="twitter-logo"
-                      class="h-6 w-6"
+                      src="/ArkaWebsite/images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-6 h-6"
                     />
+                  </a>
+
+                  <a href="#" class="nav-text"
+                    >Docs
                     <img
-                      src="/ArkaWebsite/images/discord.png"
-                      alt="discord-logo"
-                      class="h-6 w-6"
+                      src="/ArkaWebsite/images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-6 h-6"
                     />
-                  </div>
+                  </a>
+                </nav>
+                <div class="flex space-x-4">
+                  <img
+                    src="/ArkaWebsite/images/twitter.png"
+                    alt="twitter-logo"
+                    class="h-6 w-6"
+                  />
+                  <img
+                    src="/ArkaWebsite/images/discord.png"
+                    alt="discord-logo"
+                    class="h-6 w-6"
+                  />
                 </div>
-              </header>
+              </div>
+            </header>
 
             <!-- Centered Content Section -->
             <div class="flex-grow flex justify-center items-center">
@@ -87,9 +87,9 @@
       </div>
 
       <!-- 2nd Section -->
-      <div class="bg-white p-20">
+      <div class="bg-white p-6 lg:p-20">
         <div class="max-w-[1300px] mx-auto w-full h-full flex flex-col">
-          <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-6 lg:gap-10">
             <div
               class="flex items-center cursor-pointer"
               onclick="window.location.href='blogs.html'"
@@ -97,15 +97,16 @@
               <img
                 src="/ArkaWebsite/images/back-icon.svg"
                 alt="back-arrow-icon"
+                class="w-6 h-6 lg:w-10 lg:h-10"
               />
               <p
-                class="text-[#09090A] text-[32px] not-italic font-medium leading-[normal] underline font-nunito"
+                class="text-[#09090A] text-base lg:text-[32px] not-italic font-medium leading-[normal] underline font-nunito"
               >
                 Back
               </p>
             </div>
             <div
-              class="text-[#333] text-justify text-2xl not-italic font-normal leading-9 font-inter space-y-10"
+              class="text-[#333] text-justify text-lg not-italic font-normal leading-9 font-inter space-y-6 lg:space-y-10 lg:text-2xl"
             >
               <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -173,7 +174,7 @@
         </div>
       </div>
       <!-- 3rd section -->
-      <div class="bg-white p-20">
+      <div class="bg-white p-6 lg:p-20">
         <div class="mx-auto w-full h-full flex flex-col">
           <div class="flex flex-col gap-10">
             <div class="space-y-4">
@@ -184,85 +185,96 @@
               </div>
               <div class="h-1 w-full bg-[#09090a]"></div>
             </div>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="blogs-agents-grid">
-                <a href="blogInternal.html" class="block">
-                  <div class="flex space-x-2 items-center">
-                    <p
-                      class="text-white text-2xl not-italic font-bold leading-[normal] underline font-inter"
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-4 md:gap-4 sm:gap-4 xs:gap-2"
+            >
+              <div class="blogs-agents-grid p-6 lg:p-10">
+                <a href="blogInternal.html">
+                  <div class="flex flex-col gap-4 lg:gap-6">
+                    <div class="flex space-x-2 items-center">
+                      <p
+                        class="text-white not-italic font-bold leading-[normal] underline font-inter text-base lg:text-2xl"
+                      >
+                        Sovereign AI agents
+                      </p>
+                      <img
+                        src="/ArkaWebsite/images/redirect-icon.svg"
+                        alt="redirect-icon"
+                        class="w-5 h-5 lg:w-8 lg:h-8"
+                      />
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base md:text-base"
                     >
-                      Sovereign AI agents
-                    </p>
-                    <img
-                      src="/ArkaWebsite/images/redirect-icon.svg"
-                      alt="redirect-icon"
-                    />
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    A secure, open marketplace for AI agents, accessible across
-                    multiple. A secure, open marketplace for AI agents,
-                    accessible across multiple.
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    23rd oct 2024
+                      A secure, open marketplace for AI agents, accessible
+                      across multiple. A secure, open marketplace for AI agents,
+                      accessible across multiple.
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base"
+                    >
+                      23rd oct 2024
+                    </div>
                   </div>
                 </a>
               </div>
-              <div class="blogs-agents-grid">
-                <a href="blogInternal.html" class="block">
-                  <div class="flex space-x-2 items-center">
-                    <p
-                      class="text-white text-2xl not-italic font-bold leading-[normal] underline font-inter"
+              <div class="blogs-agents-grid p-6 lg:p-10">
+                <a href="blogInternal.html">
+                  <div class="flex flex-col gap-4 lg:gap-6">
+                    <div class="flex space-x-2 items-center">
+                      <p
+                        class="text-white not-italic font-bold leading-[normal] underline font-inter text-base lg:text-2xl"
+                      >
+                        Sovereign AI agents
+                      </p>
+                      <img
+                        src="/ArkaWebsite/images/redirect-icon.svg"
+                        alt="redirect-icon"
+                        class="w-5 h-5 lg:w-8 lg:h-8"
+                      />
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base md:text-base"
                     >
-                      Sovereign AI agents
-                    </p>
-                    <img
-                      src="/ArkaWebsite/images/redirect-icon.svg"
-                      alt="redirect-icon"
-                    />
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    A secure, open marketplace for AI agents, accessible across
-                    multiple. A secure, open marketplace for AI agents,
-                    accessible across multiple.
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    23rd oct 2024
+                      A secure, open marketplace for AI agents, accessible
+                      across multiple. A secure, open marketplace for AI agents,
+                      accessible across multiple.
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base"
+                    >
+                      23rd oct 2024
+                    </div>
                   </div>
                 </a>
               </div>
-              <div class="blogs-agents-grid">
-                <a href="blogInternal.html" class="block">
-                  <div class="flex space-x-2 items-center">
-                    <p
-                      class="text-white text-2xl not-italic font-bold leading-[normal] underline font-inter"
+              <div class="blogs-agents-grid p-6 lg:p-10">
+                <a href="blogInternal.html">
+                  <div class="flex flex-col gap-4 lg:gap-6">
+                    <div class="flex space-x-2 items-center">
+                      <p
+                        class="text-white not-italic font-bold leading-[normal] underline font-inter text-base lg:text-2xl"
+                      >
+                        Sovereign AI agents
+                      </p>
+                      <img
+                        src="/ArkaWebsite/images/redirect-icon.svg"
+                        alt="redirect-icon"
+                        class="w-5 h-5 lg:w-8 lg:h-8"
+                      />
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base md:text-base"
                     >
-                      Sovereign AI agents
-                    </p>
-                    <img
-                      src="/ArkaWebsite/images/redirect-icon.svg"
-                      alt="redirect-icon"
-                    />
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    A secure, open marketplace for AI agents, accessible across
-                    multiple. A secure, open marketplace for AI agents,
-                    accessible across multiple.
-                  </div>
-                  <div
-                    class="text-[rgba(255,255,255,0.90)] text-base not-italic font-extralight leading-[normal] font-nunito"
-                  >
-                    23rd oct 2024
+                      A secure, open marketplace for AI agents, accessible
+                      across multiple. A secure, open marketplace for AI agents,
+                      accessible across multiple.
+                    </div>
+                    <div
+                      class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[normal] font-nunito text-xs lg:text-base"
+                    >
+                      23rd oct 2024
+                    </div>
                   </div>
                 </a>
               </div>
@@ -272,57 +284,88 @@
       </div>
 
       <!-- 4th Section -->
-      <div class="bg-[#000] w-full justify-center flex h-screen p-20">
+
+      <div class="bg-[#000] w-full justify-center flex p-6 lg:p-20">
         <div class="flex flex-col w-full">
-          <div class="community-grid">
-            <div class="flex flex-col gap-6 py-10">
-              <div class="layer"></div>
+          <div
+            class="flex flex-col lg:flex-row w-full lg:justify-between lg:backdrop-blur-[20px] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.08)0%,rgba(204,204,204,0.08)50%,rgba(255,255,255,0.08)100%)] lg:px-20 lg:py-10 lg:rounded-3xl"
+          >
+            <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
+              <div class="layer hidden lg:flex"></div>
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
               >
                 Join our <br />
                 Community
               </div>
               <div
-                class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                class="text-white text-2xl not-italic font-bold leading-8 font-inter flex lg:hidden"
+              >
+                Join our Community
+              </div>
+              <div
+                class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[33px] font-nunito hidden text-2xl lg:flex"
               >
                 Build, train, and deploy AI agents using
                 <br />
                 decentralised.
               </div>
+              <div
+                class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[33px] font-nunito text-xs lg:hidden"
+              >
+                Build, train, and deploy AI agents using decentralised compute
+                and diverse datasets, enhancing flexibility and scalability.
+              </div>
+              <div class="h-[1px] bg-[#D9D9D980] w-full lg:hidden"></div>
             </div>
-            <div class="flex flex-col gap-20">
-              <div class="social-cards translate-x-[-150px] translate-y-0">
+
+            <div class="flex gap-10 lg:flex-col lg:gap-20 mt-6">
+              <div
+                class="social-cards py-4 px-2 lg:px-20 lg:py-6 gap-2 lg:gap-10 lg:translate-x-[-150px] lg:translate-y-0"
+              >
                 <img
                   src="/ArkaWebsite/images/discord-logo.png"
                   alt="discord-logo"
+                  class="w-10 h-10 lg:w-20 lg:h-20"
                 />
                 <div class="flex sapce-x-1 items-center">
                   <div
-                    class="text-black text-center text-2xl not-italic font-bold leading-[normal] underline"
+                    class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
                   >
                     Discord
                   </div>
-                  <img src="/ArkaWebsite/images/link.svg" alt="redirect-icon" />
+                  <img
+                    src="/ArkaWebsite/images/link.svg"
+                    alt="redirect-icon"
+                    class="w-6 h-5 lg:w-9 lg:h-8"
+                  />
                 </div>
               </div>
-              <div class="social-cards">
+
+              <div
+                class="social-cards px-2 py-4 lg:px-20 lg:py-6 gap-2 lg:gap-10"
+              >
                 <img
                   src="/ArkaWebsite/images/twitter-logo.png"
-                  alt="discord-logo"
+                  alt="twitter-logo"
+                  class="w-12 h-12 lg:w-20 lg:h-20"
                 />
                 <div class="flex sapce-x-1 items-center">
                   <div
-                    class="text-black text-center text-2xl not-italic font-bold leading-[normal] underline"
+                    class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
                   >
                     Twitter
                   </div>
-                  <img src="/ArkaWebsite/images/link.svg" alt="redirect-icon" />
+                  <img
+                    src="/ArkaWebsite/images/link.svg"
+                    alt="redirect-icon"
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col pt-[120px]">
+          <div class="flex flex-col mt-[120px] hidden lg:flex">
             <div class="flex justify-between w-full">
               <div class="flex flex-col gap-6">
                 <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
@@ -411,6 +454,19 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="footer-small lg:hidden gap-4">
+        <img src="/ArkaWebsite/images/arka-logo.svg" alt="arka-logo" />
+        <p
+          class="text-white text-center text-xs not-italic font-extralight leading-[normal] font-nunito"
+        >
+          Arka Network is a unified platform for sovereign and decentralised AI.
+        </p>
+        <div class="h-[1px] w-full bg-[#D9D9D980]"></div>
+        <div class="flex items-center gap-4">
+          <img src="/ArkaWebsite/images/twitter.png" alt="twitter-logo" />
+          <img src="/ArkaWebsite/images/discord.png" alt="discord-log" />
         </div>
       </div>
     </div>

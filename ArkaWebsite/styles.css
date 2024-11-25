@@ -74,7 +74,7 @@ header {
   @apply text-[#09090A] text-[64px] not-italic font-bold leading-[90px] font-inter;
 }
 .community-grid {
-  @apply flex w-full justify-between items-center backdrop-blur-[20px] px-20 py-10 rounded-3xl;
+  @apply w-full justify-between items-center backdrop-blur-[20px] px-20 py-10 rounded-3xl;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.08) 0%,
@@ -83,7 +83,7 @@ header {
   );
 }
 .social-cards {
-  @apply flex justify-center items-center w-full gap-10 px-24 py-6 rounded-3xl;
+  @apply flex justify-center items-center w-full rounded-3xl;
   background: #f3f3f3;
 }
 .interchainAgent-text {
@@ -111,7 +111,11 @@ header {
   @apply flex h-11 justify-center items-center gap-2.5 border px-6 py-2.5 rounded-lg border-solid border-[rgba(112,112,112,0.50)];
 }
 .blogs-agents-grid {
-  @apply backdrop-blur-[10px] flex flex-col items-start gap-6 p-10 rounded-3xl bg-[#000000];
+  @apply backdrop-blur-[10px] flex flex-col items-start rounded-3xl bg-[#000000];
+}
+.footer-small {
+  @apply flex flex-col justify-center items-center gap-2.5 px-6 py-10;
+  background: #181819;
 }
 .hover-box {
   transition: transform 0.3s ease;
