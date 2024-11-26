@@ -18,24 +18,47 @@
   <body>
     <div class="w-full h-full">
       <!-- Main Section -->
-      <div class="bg-[#000] w-full justify-center flex h-screen">
+      <div class="bg-[#000] w-full justify-center flex min-h-screen">
         <div
-          class="bg-[url('/ArkaWebsite/images/AboutUs/aboutus-bg.svg')] bg-right-top bg-no-repeat bg-cover w-full min-h-screen"
+          class="bg-[url('/ArkaWebsite/images/AboutUs/aboutus-bg.svg')] bg-right-top lg:bg-right bg:bg-cover bg-contain bg-no-repeat w-full min-h-screen"
         >
           <div
-            class="p-20 mx-auto flex flex-col w-full justify-center items-center h-full"
+            class="p-4 sm:p-8 md:p-12 lg:p-20 mx-auto flex flex-col w-full justify-center items-center h-full"
           >
             <!-- Header -->
-            <header class="flex justify-between w-full items-center">
+            <header class="flex justify-between w-full items-center relative">
               <div>
                 <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
               </div>
-              <div class="flex gap-10 items-center">
-                <nav class="flex gap-6">
+
+              <!-- Hamburger Menu Button (visible only on small screens) -->
+              <button id="hamburger-btn" class="lg:hidden text-white p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div
+                id="nav-menu"
+                class="lg:flex lg:gap-10 lg:items-center hidden absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0"
+              >
+                <nav class="flex flex-col lg:flex-row gap-6">
                   <a href="aboutus.html" class="nav-text">About Us</a>
                   <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
                   <a href="blogs.html" class="nav-text">Blogs</a>
-                  <a href="#" class="nav-text">
+                  <a href="#" class="nav-text flex items-center">
                     Whitepaper
                     <img
                       src="/ArkaWebsite/images/redirect-icon.svg"
@@ -43,9 +66,8 @@
                       class="w-6 h-6"
                     />
                   </a>
-
-                  <a href="#" class="nav-text"
-                    >Docs
+                  <a href="#" class="nav-text flex items-center">
+                    Docs
                     <img
                       src="/ArkaWebsite/images/redirect-icon.svg"
                       alt="redirect-icon"
@@ -53,7 +75,7 @@
                     />
                   </a>
                 </nav>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mt-4 lg:mt-0">
                   <img
                     src="/ArkaWebsite/images/twitter.png"
                     alt="twitter-logo"
@@ -69,17 +91,19 @@
             </header>
 
             <!-- Content Section -->
-            <section class="flex flex-1 justify-center items-center w-full">
+            <section
+              class="flex flex-1 justify-center items-center w-full mt-8 lg:mt-0"
+            >
               <div class="space-y-4 flex flex-col z-10 relative w-full">
                 <h1
-                  class="text-white text-[100px] not-italic font-extrabold leading-[120px] font-inter"
+                  class="text-white text-4xl sm:text-6xl md:text-7xl lg:text-[100px] not-italic font-extrabold leading-tight lg:leading-[120px] font-inter"
                 >
                   <p>THE</p>
                   <p>ARKA</p>
                   <p>NETWORK</p>
                 </h1>
                 <p
-                  class="text-white text-[64px] not-italic font-thin leading-[120px] font-inter"
+                  class="text-white text-2xl sm:text-4xl md:text-5xl lg:text-[64px] not-italic font-thin leading-tight lg:leading-[120px] font-inter"
                 >
                   Why we are building it
                 </p>
@@ -91,35 +115,52 @@
       </div>
 
       <!-- 2nd Section -->
-      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
-        <div class="flex platform-section z-10 !pt-10 !pr-0 !pl-20 !pb-0">
+      <div
+        class="bg-[#f3f3f300] justify-center flex h-screen px-6 py-10 lg:p-20"
+      >
+        <div class="flex platform-section z-10 !pt-10 lg:pr-0 lg:pl-20 pb-0">
           <div
-            class="bg-[url('/ArkaWebsite/images/AboutUs/believe-bg.png')] bg-right-top bg-no-repeat bg-contain h-screen w-full"
+            class="sm:bg-none lg:bg-[url('/ArkaWebsite/images/AboutUs/believe-bg.png')] bg-right-top bg-no-repeat bg-contain h-screen w-full"
           >
-            <div class="h-1 w-full bg-[#09090A]"></div>
-            <div class="flex gap-20 pt-10">
-              <div class="flex flex-col gap-10">
+            <div class="h-1 w-full bg-[#09090A] px-6"></div>
+            <div
+              class="flex flex-col lg:flex-row gap-6 pt-1 lg:gap-10 lg:gap-20 lg:pt-10 px-6"
+            >
+              <div class="flex flex-col gap-6 lg:gap-10">
                 <div
-                  class="font-inter text-[#09090A] not-italic leading-[120px]"
+                  class="font-inter text-[#09090A] not-italic leading-[120px] lg:block hidden"
                 >
                   <p class="text-[140px] font-light">We</p>
                   <p class="text-[100px] font-light">believe</p>
                   <p class="text-[120px] font-bold">
-                    AI <span class="text-[100px] font-normal">should</span>
+                    AI
+                    <span class="text-[100px] font-normal">should</span>
                   </p>
                   <p class="text-[100px] font-normal">be</p>
                 </div>
                 <div
-                  class="text-[#09090A] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                  class="font-inter text-[#09090A] not-italic leading-[54px] xs:block sm:block lg:hidden"
+                >
+                  <p class="text-5xl font-light">
+                    We
+                    <span class="text-5xl font-light">believe</span>
+                    <span class="text-5xl font-bold"> AI </span>
+                  </p>
+                  <p class="text-5xl font-normal">
+                    should
+                    <span class="text-5xl font-normal">be </span>
+                  </p>
+                </div>
+                <div
+                  class="text-[#09090A] text-sm lg:text-2xl not-italic font-extralight leading-[33px] font-nunito"
                 >
                   From building agents using a robust <br />
                   execution layer to deploying them in a secure, decentralized
                   marketplace.
                 </div>
               </div>
-
               <div
-                class="text-[#09090A] text-[90px] not-italic font-black leading-[120px] font-inter !pr-10 !mt-10"
+                class="text-[#09090A] text-[45px] lg:text-[90px] not-italic font-black leading-[54px] lg:leading-[120px] font-inter !pr-10 !lg:mt-10"
               >
                 <p class="">Open</p>
                 <p class="">Secure</p>
@@ -128,32 +169,53 @@
               </div>
             </div>
           </div>
+          <div class="block lg:hidden w-full">
+            <img
+              src="/ArkaWebsite/images/AboutUs/believe-inner-bg.svg"
+              alt="believe-bg"
+              class="w-full object-cover"
+            />
+          </div>
         </div>
       </div>
 
       <!-- 3rd Section -->
-      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
-        <div class="flex platform-section !bg-[#09090A]">
+      <div class="bg-[#f3f3f300] justify-center flex h-screen px-6 lg:p-20">
+        <div class="flex platform-section !bg-[#09090A] px-6 lg:p-20">
           <div class="h-1 w-full bg-[#fff]">
-            <div class="flex gap-20 pt-20">
-              <div class="text-white not-italic leading-[120px] font-inter">
-                <p class="text-[90px] font-light">
+            <div
+              class="flex flex-col lg:flex-row gap-10 lg:gap-20 pt-10 lg:pt-20"
+            >
+              <div class="text-white not-italic font-inter">
+                <p
+                  class="text-4xl lg:text-[90px] font-light leading-[54px] lg:leading-[120px]"
+                >
                   Our
-                  <span class="text-[100px] font-bold">mission</span>
+                  <span class="text-4xl lg:text-[100px] font-bold"
+                    >mission</span
+                  >
                 </p>
-                <p class="text-[90px] font-light">
+                <p
+                  class="text-4xl lg:text-[90px] font-light leading-[54px] lg:leading-[120px]"
+                >
                   is to
-                  <span class="text-[100px] font-bold">build</span>
+                  <span class="text-4xl lg:text-[100px] font-bold">build</span>
                 </p>
-                <p class="text-[90px] font-bold">decentralized</p>
-                <p class="text-[100px] font-bold">
+                <p
+                  class="text-4xl lg:text-[90px] font-bold leading-[54px] lg:leading-[120px]"
+                >
+                  decentralized
+                </p>
+                <p
+                  class="text-4xl lg:text-[100px] font-bold leading-[54px] lg:leading-[120px]"
+                >
                   AI
-                  <span class="text-[90px] font-light">future</span>
+                  <span class="text-4xl lg:text-[90px] font-light">future</span>
                 </p>
               </div>
-              <div class="flex flex-col gap-10">
+              <div class="flex flex-col gap-1 lg:gap-10">
                 <div
-                  class="text-white text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                  class="text-white text-sm lg:text-2xl not-italic font-extralight leading-[33px] font-nunito"
                 >
                   From building agents using a robust execution layer to
                   deploying them in a secure, decentralized marketplace, ARKA
@@ -172,102 +234,122 @@
       </div>
 
       <!-- 4th Section -->
-      <div class="build-grid justify-center items-center">
-        <div class="build-grid-inner">
-          <div class="flex items-center w-full justify-between">
+      <div class="justify-center items-center px-6 lg:px-20 py-10">
+        <div class="build-grid-inner px-6 lg:px-20 py-10">
+          <div
+            class="flex flex-col gap-10 lg:flex-row lg:justify-between items-center"
+          >
             <div class="flex flex-col">
               <div class="layer"></div>
               <div
-                class="text-white text-[40px] not-italic font-bold leading-[normal] font-inter"
+                class="text-white text-[32px] lg:text-[40px] not-italic font-bold leading-[normal] font-inter"
               >
                 Want to build with us ?
               </div>
               <div
-                class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                class="text-[rgba(255,255,255,0.90)] text-sm lg:text-2xl not-italic font-extralight leading-[33px] font-nunito"
               >
                 Build, train, and deploy AI agents using decentralised.
               </div>
             </div>
-            <div class="flex space-x-6 items-center">
-              <div class="fill-form items-center">
-                <p
-                  class="text-white text-base not-italic font-medium leading-[normal] underline font-nunito"
-                >
-                  Fill in the form here
-                </p>
-                <img
-                  src="/ArkaWebsite/images/redirect-white-icon.svg"
-                  alt="redirect-icon"
-                />
-              </div>
-              <div class="custom-btn !h-11 items-center">
-                <p
-                  class="text-[#09090A] text-base not-italic font-medium leading-[normal] underline font-nunito"
-                >
-                  Fill in the form here
-                </p>
-                <img
-                  src="/ArkaWebsite/images/redirect-black-icon.svg"
-                  alt="redirect-icon"
-                />
-              </div>
+
+            <div class="custom-btn !h-11 items-center w-fit">
+              <p
+                class="text-[#09090A] text-base not-italic font-medium leading-[normal] underline font-nunito"
+              >
+                Fill in the form here
+              </p>
+              <img
+                src="/ArkaWebsite/images/redirect-black-icon.svg"
+                alt="redirect-icon"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 5th Section -->
-      <div class="bg-[#000] w-full justify-center flex h-screen p-20">
+      <!-- 5th Section Footer -->
+      <div class="bg-[#000] w-full justify-center flex p-6 lg:p-20">
         <div class="flex flex-col w-full">
-          <div class="community-grid">
-            <div class="flex flex-col gap-6 py-10">
-              <div class="layer"></div>
+          <div
+            class="flex flex-col lg:flex-row w-full lg:justify-between lg:backdrop-blur-[20px] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.08)0%,rgba(204,204,204,0.08)50%,rgba(255,255,255,0.08)100%)] lg:px-20 lg:py-10 lg:rounded-3xl"
+          >
+            <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
+              <div class="layer hidden lg:flex"></div>
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
               >
                 Join our <br />
                 Community
               </div>
               <div
-                class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                class="text-white text-2xl not-italic font-bold leading-8 font-inter flex lg:hidden"
+              >
+                Join our Community
+              </div>
+              <div
+                class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[33px] font-nunito hidden text-2xl lg:flex"
               >
                 Build, train, and deploy AI agents using
                 <br />
                 decentralised.
               </div>
+              <div
+                class="text-[rgba(255,255,255,0.90)] not-italic font-extralight leading-[33px] font-nunito text-xs lg:hidden"
+              >
+                Build, train, and deploy AI agents using decentralised compute
+                and diverse datasets, enhancing flexibility and scalability.
+              </div>
+              <div class="h-[1px] bg-[#D9D9D980] w-full lg:hidden"></div>
             </div>
-            <div class="flex flex-col gap-20">
-              <div class="social-cards translate-x-[-150px] translate-y-0">
+
+            <div class="flex gap-10 lg:flex-col lg:gap-20 mt-6">
+              <div
+                class="social-cards py-4 px-2 lg:px-20 lg:py-6 gap-2 lg:gap-10 lg:translate-x-[-150px] lg:translate-y-0"
+              >
                 <img
                   src="/ArkaWebsite/images/discord-logo.png"
                   alt="discord-logo"
+                  class="w-10 h-10 lg:w-20 lg:h-20"
                 />
                 <div class="flex sapce-x-1 items-center">
                   <div
-                    class="text-black text-center text-2xl not-italic font-bold leading-[normal] underline"
+                    class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
                   >
                     Discord
                   </div>
-                  <img src="/ArkaWebsite/images/link.svg" alt="redirect-icon" />
+                  <img
+                    src="/ArkaWebsite/images/link.svg"
+                    alt="redirect-icon"
+                    class="w-6 h-5 lg:w-9 lg:h-8"
+                  />
                 </div>
               </div>
-              <div class="social-cards">
+
+              <div
+                class="social-cards px-2 py-4 lg:px-20 lg:py-6 gap-2 lg:gap-10"
+              >
                 <img
                   src="/ArkaWebsite/images/twitter-logo.png"
-                  alt="discord-logo"
+                  alt="twitter-logo"
+                  class="w-12 h-12 lg:w-20 lg:h-20"
                 />
                 <div class="flex sapce-x-1 items-center">
                   <div
-                    class="text-black text-center text-2xl not-italic font-bold leading-[normal] underline"
+                    class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
                   >
                     Twitter
                   </div>
-                  <img src="/ArkaWebsite/images/link.svg" alt="redirect-icon" />
+                  <img
+                    src="/ArkaWebsite/images/link.svg"
+                    alt="redirect-icon"
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col pt-[120px]">
+          <div class="flex flex-col mt-[120px] hidden lg:flex">
             <div class="flex justify-between w-full">
               <div class="flex flex-col gap-6">
                 <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
@@ -358,6 +440,28 @@
           </div>
         </div>
       </div>
+      <div class="footer-small lg:hidden gap-4">
+        <img src="/ArkaWebsite/images/arka-logo.svg" alt="arka-logo" />
+        <p
+          class="text-white text-center text-xs not-italic font-extralight leading-[normal] font-nunito"
+        >
+          Arka Network is a unified platform for sovereign and decentralised AI.
+        </p>
+        <div class="h-[1px] w-full bg-[#D9D9D980]"></div>
+        <div class="flex items-center gap-4">
+          <img src="/ArkaWebsite/images/twitter.png" alt="twitter-logo" />
+          <img src="/ArkaWebsite/images/discord.png" alt="discord-log" />
+        </div>
+      </div>
     </div>
   </body>
+  <script>
+    // Hamburger menu functionality
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>

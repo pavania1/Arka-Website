@@ -22,18 +22,41 @@
         <div
           class="bg-[url('/ArkaWebsite/images/blog-bg.svg')] bg-no-repeat bg-cover w-full h-full"
         >
-          <div class="p-20 mx-auto w-full h-full flex flex-col">
+          <div class="px-6 py-10 lg:p-20 mx-auto w-full h-full flex flex-col">
             <!-- Header -->
-            <header class="flex justify-between w-full items-center">
+            <header class="flex justify-between w-full items-center relative">
               <div>
                 <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
               </div>
-              <div class="flex gap-10 items-center">
-                <nav class="flex gap-6">
+
+              <!-- Hamburger Menu Button (visible only on small screens) -->
+              <button id="hamburger-btn" class="lg:hidden text-white p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div
+                id="nav-menu"
+                class="lg:flex lg:gap-10 lg:items-center hidden absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0"
+              >
+                <nav class="flex flex-col lg:flex-row gap-6">
                   <a href="aboutus.html" class="nav-text">About Us</a>
                   <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
                   <a href="blogs.html" class="nav-text">Blogs</a>
-                  <a href="#" class="nav-text">
+                  <a href="#" class="nav-text flex items-center">
                     Whitepaper
                     <img
                       src="/ArkaWebsite/images/redirect-icon.svg"
@@ -41,9 +64,8 @@
                       class="w-6 h-6"
                     />
                   </a>
-
-                  <a href="#" class="nav-text"
-                    >Docs
+                  <a href="#" class="nav-text flex items-center">
+                    Docs
                     <img
                       src="/ArkaWebsite/images/redirect-icon.svg"
                       alt="redirect-icon"
@@ -51,7 +73,7 @@
                     />
                   </a>
                 </nav>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mt-4 lg:mt-0">
                   <img
                     src="/ArkaWebsite/images/twitter.png"
                     alt="twitter-logo"
@@ -88,7 +110,7 @@
       </div>
 
       <!-- 2nd Section -->
-      <div class="bg-[#f3f3f300] justify-center flex p-20">
+      <div class="bg-[#f3f3f300] justify-center flex px-6 py-10 lg:p-20">
         <div class="flex flex-col gap-6">
           <div class="gap-6 w-full hidden lg:flex">
             <div class="bg-black !rounded-2xl w-[66%]">
@@ -590,4 +612,13 @@
       </div>
     </div>
   </body>
+  <script>
+    // Hamburger menu functionality
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>

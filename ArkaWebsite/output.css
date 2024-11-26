@@ -1070,7 +1070,6 @@ header {
   flex-direction: column;
   align-items: flex-start;
   border-radius: 1.5rem;
-  padding: 5rem;
   --tw-shadow: 100px 100px 100px 100px rgba(0,0,0,0.04);
   --tw-shadow-colored: 100px 100px 100px 100px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1264,10 +1263,6 @@ header {
   width: 100%;
   flex-direction: column;
   gap: 1.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   background: #f3f3f3;
 }
 
@@ -1281,10 +1276,6 @@ header {
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(217 217 217 / var(--tw-border-opacity, 1));
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   background: #181819;
 }
 
