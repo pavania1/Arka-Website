@@ -28,7 +28,7 @@ header {
   background: #fff;
 }
 .agents-grid {
-  @apply flex flex-col w-full p-6 rounded-2xl;
+  @apply flex flex-col w-full rounded-2xl;
   background: #181819;
 }
 .layer {

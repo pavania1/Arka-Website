@@ -18,36 +18,61 @@
   <body>
     <div class="w-full h-full">
       <!-- Main Section -->
-      <div class="bg-[#000] w-full justify-center flex h-screen p-20">
+      <div class="bg-[#000] w-full justify-center flex h-screen py-10 lg:p-20">
         <div class="flex flex-col w-full">
-          <header class="flex justify-between w-full items-center">
+          <!-- Header -->
+          <header
+            class="flex justify-between w-full items-center relative px-6"
+          >
             <div>
               <img src="/ArkaWebsite/images/arka-logo.svg" alt="Arka-logo" />
             </div>
-            <div class="flex gap-10 items-center">
-              <nav class="flex gap-6">
+
+            <!-- Hamburger Menu Button (visible only on small screens) -->
+            <button id="hamburger-btn" class="lg:hidden text-white p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div
+              id="nav-menu"
+              class="lg:flex lg:gap-10 lg:items-center hidden absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-black lg:bg-transparent p-6 lg:p-0"
+            >
+              <nav class="flex flex-col lg:flex-row gap-6">
                 <a href="aboutus.html" class="nav-text">About Us</a>
                 <a href="AiDeveloper.html" class="nav-text">AI Developer</a>
                 <a href="blogs.html" class="nav-text">Blogs</a>
-                <a href="#" class="nav-text">
+                <a href="#" class="nav-text flex items-center">
                   Whitepaper
                   <img
                     src="/ArkaWebsite/images/redirect-icon.svg"
                     alt="redirect-icon"
-                    class="w-6 h-6"
+                    class="w-4 h-4 lg:w-6 lg:h-6"
                   />
                 </a>
-
-                <a href="#" class="nav-text"
-                  >Docs
+                <a href="#" class="nav-text flex items-center">
+                  Docs
                   <img
                     src="/ArkaWebsite/images/redirect-icon.svg"
                     alt="redirect-icon"
-                    class="w-6 h-6"
+                    class="w-4 h-4 lg:w-6 lg:h-6"
                   />
                 </a>
               </nav>
-              <div class="flex space-x-4">
+              <div class="flex space-x-4 mt-4 lg:mt-0">
                 <img
                   src="/ArkaWebsite/images/twitter.png"
                   alt="twitter-logo"
@@ -61,17 +86,26 @@
               </div>
             </div>
           </header>
-          <section class="flex h-full">
-            <div class="gap-10 flex flex-col justify-center items-start mt-10">
+          <section class="flex flex-col h-full">
+            <div
+              class="bg-cover bg-center h-[50%]"
+              style="
+                background-image: url('/ArkaWebsite/images/chain-small.svg');
+              "
+            ></div>
+
+            <div
+              class="gap-6 lg:gap-10 flex flex-col lg:justify-center items-start mt-10 px-6 lg:px-0"
+            >
               <div class="gap-6 flex flex-col z-10 relative">
                 <h1
-                  class="text-white text-[100px] not-italic font-extrabold leading-[120px] font-inter"
+                  class="text-white text-5xl lg:text-[100px] not-italic font-extrabold leading-[64px] lg:leading-[120px] font-inter"
                 >
                   Liberating AI <br />
                   Sovereignty
                 </h1>
                 <p
-                  class="text-[rgba(255,255,255,0.90)] text-2xl not-italic font-light leading-[33px] font-nunito"
+                  class="text-[rgba(255,255,255,0.90)] text-base lg:text-2xl not-italic font-light leading-6 lg:leading-[33px] font-nunito"
                 >
                   Unified Platform for Verifiable AI Execution, Orchestration,
                   and <br />Multi-Agent Consensus
@@ -79,7 +113,7 @@
               </div>
               <button class="custom-btn z-10">Join our community</button>
             </div>
-            <div class="absolute z-0 top-[-65px] right-50">
+            <div class="absolute z-0 top-[-65px] right-50 hidden lg:block">
               <img
                 src="/ArkaWebsite/images/mainbg.png"
                 alt="chain-image"
@@ -90,13 +124,15 @@
         </div>
       </div>
       <!-- Platform -->
-      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
+      <div
+        class="bg-[#f3f3f300] justify-center flex h-screen px-6 py-10 lg:p-20"
+      >
         <div class="z-10">
-          <div class="flex platform-section z-10">
-            <div class="flex gap-10">
+          <div class="flex platform-section px-6 py-10 lg:p-20 z-10">
+            <div class="flex flex-col lg:flex-row gap-10">
               <div class="flex flex-col gap-6">
                 <div
-                  class="text-[#09090A] text-[90px] not-italic font-thin leading-[120px] font-inter"
+                  class="text-[#09090A] text-[32px] lg:text-[90px] not-italic font-thin leading-10 lg:leading-[120px] font-inter"
                 >
                   The <span class="font-bold">Unified platform</span> for <br />
                   <span class="font-bold">Sovereign</span>
@@ -105,19 +141,21 @@
                   <span class="font-bold">DeAI</span>
                 </div>
                 <div
-                  class="text-[#09090A] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                  class="text-[#09090A] text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
                 >
                   Build, train, and deploy AI agents using <br />
                   decentralised compute and diverse datasets, <br />
                   enhancing flexibility and scalability.
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-6">
-                <div class="agents-grid gap-6">
+              <div
+                class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-2 lg:gap-6"
+              >
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -133,11 +171,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="agents-grid gap-6">
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -153,11 +191,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="agents-grid gap-6">
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -173,11 +211,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="agents-grid gap-6">
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -193,11 +231,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="agents-grid gap-6">
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -213,11 +251,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="agents-grid gap-6">
+                <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
                   <img
                     src="/ArkaWebsite/images/agent-icon.svg"
                     alt="Icon"
-                    class="h-8 w-8"
+                    class="w-5 h-5 lg:h-8 lg:w-8"
                   />
                   <div class="gap-2 flex flex-col">
                     <h3
@@ -240,7 +278,6 @@
       </div>
 
       <!-- ARKA BUILDS -->
-
       <div
         class="bg-[#f3f3f300] w-full flex-col flex justify-center items-center h-full p-20"
       >
@@ -273,6 +310,7 @@
                   <div class="layer"></div>
                   <div class="arka-build-headers">Agent Layer</div>
                 </div>
+
                 <div class="grid grid-cols-2 gap-6">
                   <div class="arka-build-grid">
                     <img
@@ -678,9 +716,7 @@
       <div class="bg-[#f3f3f300] justify-center px-6 py-10 lg:p-20">
         <div class="flex platform-section !bg-[#09090A] pt-10 lg:p-20">
           <div class="flex flex-1 flex-col lg:flex-row gap-10">
-            <div
-              class="flex flex-col gap-6 lg:gap-10 lg:w-[50%] h-[75%] px-6"
-            >
+            <div class="flex flex-col gap-6 lg:gap-10 lg:w-[50%] h-[75%] px-6">
               <div
                 class="text-white text-[80px] not-italic font-bold leading-[90px] font-inter hidden lg:flex"
               >
@@ -1103,7 +1139,7 @@
                   />
                 </div>
                 <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-8"
+                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8"
                 >
                   Build, train, and deploy AI agents using decentralised compute
                   and diverse datasets, enhancing flexibility and scalability.
@@ -1131,7 +1167,7 @@
                   />
                 </div>
                 <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-8"
+                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8"
                 >
                   Build, train, and deploy AI agents using decentralised compute
                   and diverse datasets, enhancing flexibility and scalability.
@@ -1158,7 +1194,7 @@
                   />
                 </div>
                 <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-8"
+                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8"
                 >
                   Build, train, and deploy AI agents using decentralised compute
                   and diverse datasets, enhancing flexibility and scalability.
@@ -1185,7 +1221,7 @@
                   />
                 </div>
                 <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-8"
+                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8"
                 >
                   Build, train, and deploy AI agents using decentralised compute
                   and diverse datasets, enhancing flexibility and scalability.
@@ -1212,7 +1248,7 @@
                   />
                 </div>
                 <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-8"
+                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8"
                 >
                   Build, train, and deploy AI agents using decentralised compute
                   and diverse datasets, enhancing flexibility and scalability.
@@ -1654,4 +1690,13 @@
       </div>
     </div>
   </body>
+  <script>
+    // Hamburger menu functionality
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>
