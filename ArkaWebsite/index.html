@@ -675,40 +675,70 @@
         </div>
       </div>
       <!-- Interchain Agent -->
-      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
-        <div class="flex platform-section !bg-[#09090A]">
-          <div class="flex-1 flex gap-10">
-            <div class="flex flex-col gap-10 w-[40%] h-[75%]">
+      <div class="bg-[#f3f3f300] justify-center px-6 py-10 lg:p-20">
+        <div class="flex platform-section !bg-[#09090A] pt-10 lg:p-20">
+          <div class="flex flex-1 flex-col lg:flex-row gap-10">
+            <div
+              class="flex flex-col gap-6 lg:gap-10 lg:w-[50%] h-[75%] px-6"
+            >
               <div
-                class="text-white text-[80px] not-italic font-bold leading-[90px] font-inter"
+                class="text-white text-[80px] not-italic font-bold leading-[90px] font-inter hidden lg:flex"
               >
                 Interchain <br />
                 Agent
               </div>
-
+              <div
+                class="text-white text-[32px] not-italic font-bold leading-10 font-inter flex lg:hidden"
+              >
+                Interchain Agent
+              </div>
               <div class="flex flex-col gap-6">
-                <div class="flex items-center w-full gap-10">
+                <div class="flex items-center w-full gap-4 lg:gap-10">
                   <div class="flex space-x-1 items-center">
-                    <img src="/ArkaWebsite/images/done.svg" alt="done-icon" />
-                    <p class="interchainAgent-text">Knowledge</p>
+                    <img
+                      src="/ArkaWebsite/images/done.svg"
+                      alt="done-icon"
+                      class="w-4 h-4 lg:w-6 lg:h-6"
+                    />
+                    <p
+                      class="interchainAgent-text leading-3 lg:leading-[33px] text-xs lg:text-lg"
+                    >
+                      Knowledge
+                    </p>
                   </div>
                   <div class="flex space-x-1 items-center">
-                    <img src="/ArkaWebsite/images/done.svg" alt="done-icon" />
-                    <p class="interchainAgent-text">Analytics</p>
+                    <img
+                      src="/ArkaWebsite/images/done.svg"
+                      alt="done-icon"
+                      class="w-4 h-4 lg:w-6 lg:h-6"
+                    />
+                    <p
+                      class="interchainAgent-text leading-3 lg:leading-[33px] text-xs lg:text-lg"
+                    >
+                      Analytics
+                    </p>
                   </div>
                   <div class="flex space-x-1 items-center">
-                    <img src="/ArkaWebsite/images/done.svg" alt="done-icon" />
-                    <p class="interchainAgent-text">Actions</p>
+                    <img
+                      src="/ArkaWebsite/images/done.svg"
+                      alt="done-icon"
+                      class="w-4 h-4 lg:w-6 lg:h-6"
+                    />
+                    <p
+                      class="interchainAgent-text leading-3 lg:leading-[33px] text-xs lg:text-lg"
+                    >
+                      Actions
+                    </p>
                   </div>
                 </div>
                 <p
-                  class="text-white text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                  class="text-white text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
                 >
                   From building agents using a robust execution layer to
                   deploying them in a secure, decentralized marketplace.
                 </p>
                 <p
-                  class="text-white text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                  class="text-white text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
                 >
                   From building agents using a robust execution layer to
                   deploying them in a secure, decentralized marketplace. From
@@ -723,7 +753,7 @@
               </div>
               <div class="custom-btn !w-fit">Join waiting list</div>
             </div>
-            <div class="flex relative overflow-hidden w-[60%]">
+            <div class="flex relative overflow-hidden w-full lg:w-[50%]">
               <video
                 src="/ArkaWebsite/videos/ARKA Interchain agent 3.mp4"
                 class="w-full h-full object-left object-cover"
@@ -737,17 +767,19 @@
       </div>
 
       <!-- RoadMap -->
-      <div class="bg-[#f3f3f300] justify-center flex h-screen p-20">
-        <div class="flex platform-section">
-          <div class="flex flex-col gap-20 w-full">
-            <div class="flex justify-between w-full gap-20">
+      <div class="bg-[#f3f3f300] justify-center flex px-6 py-10 lg:p-20">
+        <div class="flex platform-section px-6 py-10 lg:p-20">
+          <div class="flex flex-col gap-10 lg:gap-20 w-full">
+            <div
+              class="flex flex-col lg:flex-row justify-between w-full lg:gap-20"
+            >
               <div
-                class="text-[#09090A] text-[64px] not-italic font-bold leading-[72px] font-inter"
+                class="text-[#09090A] text-[32px] lg:text-[64px] not-italic font-bold leading-10 leading-[72px] font-inter"
               >
                 Roadmap
               </div>
               <div
-                class="text-[rgba(9,9,10,0.90)] text-2xl not-italic font-extralight leading-[33px] font-nunito"
+                class="text-[rgba(9,9,10,0.90)] text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
               >
                 Build, train, and deploy AI agents using decentralised <br />
                 compute and diverse datasets, enhancing flexibility and <br />
@@ -755,7 +787,7 @@
               </div>
             </div>
 
-            <div class="flex items-center w-full">
+            <div class="flex items-center w-full justify-center hidden lg:flex">
               <img src="/ArkaWebsite/images/circle.svg" alt="circle" />
               <div class="flex flex-col space-y-6">
                 <div class="w-[280px] h-[160px]"></div>
@@ -886,6 +918,141 @@
                 alt="circle"
                 class="w-2 h-2"
               />
+            </div>
+            <div class="block md:block lg:hidden">
+              <div class="flex">
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/ArkaWebsite/images/circle.svg" alt="circle" />
+                  <div class="divider-vertical"></div>
+
+                  <div class="timeline-circle">Q1</div>
+
+                  <div class="divider-vertical"></div>
+                </div>
+                <div class="p-6 box-border">
+                  <div class="timeline-content">
+                    <h3
+                      class="text-[#09090A] text-sm not-italic font-normal leading-[21px] tracking-[0.72px] font-inter"
+                    >
+                      Testnet Phase 1
+                    </h3>
+                    <p
+                      class="text-[#09090A] text-xs not-italic font-extralight leading-[21px] tracking-[0.56px] font-inter"
+                    >
+                      Build, train, and deploy AI agents using decentralized
+                      compute.
+                    </p>
+                    <span
+                      class="text-[#09090A] text-sm not-italic font-bold leading-[normal] font-inter"
+                      >23rd Oct 2024</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="/ArkaWebsite/images/circle.svg"
+                    alt="circle"
+                    class="w-2 h-2"
+                  />
+                  <div class="divider-vertical"></div>
+
+                  <div class="timeline-circle">Q2</div>
+
+                  <div class="divider-vertical"></div>
+                </div>
+                <div class="p-6 box-border">
+                  <div class="timeline-content">
+                    <h3
+                      class="text-[#09090A] text-sm not-italic font-normal leading-[21px] tracking-[0.72px] font-inter"
+                    >
+                      Testnet Phase 2
+                    </h3>
+                    <p
+                      class="text-[#09090A] text-xs not-italic font-extralight leading-[21px] tracking-[0.56px] font-inter"
+                    >
+                      Build, train, and deploy AI agents using decentralized
+                      compute.
+                    </p>
+                    <span
+                      class="text-[#09090A] text-sm not-italic font-bold leading-[normal] font-inter"
+                      >23rd Oct 2024</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="/ArkaWebsite/images/circle.svg"
+                    alt="circle"
+                    class="w-2 h-2"
+                  />
+                  <div class="divider-vertical"></div>
+
+                  <div class="timeline-circle">Q3</div>
+
+                  <div class="divider-vertical"></div>
+                </div>
+                <div class="p-6 box-border">
+                  <div class="timeline-content">
+                    <h3
+                      class="text-[#09090A] text-sm not-italic font-normal leading-[21px] tracking-[0.72px] font-inter"
+                    >
+                      Testnet Phase 3
+                    </h3>
+                    <p
+                      class="text-[#09090A] text-xs not-italic font-extralight leading-[21px] tracking-[0.56px] font-inter"
+                    >
+                      Build, train, and deploy AI agents using decentralized
+                      compute.
+                    </p>
+                    <span
+                      class="text-[#09090A] text-sm not-italic font-bold leading-[normal] font-inter"
+                      >23rd Oct 2024</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    src="/ArkaWebsite/images/circle.svg"
+                    alt="circle"
+                    class="w-2 h-2"
+                  />
+                  <div class="divider-vertical"></div>
+
+                  <div class="timeline-circle">Q4</div>
+
+                  <div class="divider-vertical"></div>
+                  <img
+                    src="/ArkaWebsite/images/circle.svg"
+                    alt="circle"
+                    class="w-2 h-2"
+                  />
+                </div>
+                <div class="p-6 box-border">
+                  <div class="timeline-content">
+                    <h3
+                      class="text-[#09090A] text-sm not-italic font-normal leading-[21px] tracking-[0.72px] font-inter"
+                    >
+                      Testnet Phase 4
+                    </h3>
+                    <p
+                      class="text-[#09090A] text-xs not-italic font-extralight leading-[21px] tracking-[0.56px] font-inter"
+                    >
+                      Build, train, and deploy AI agents using decentralized
+                      compute.
+                    </p>
+                    <span
+                      class="text-[#09090A] text-sm not-italic font-bold leading-[normal] font-inter"
+                      >23rd Oct 2024</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -51,11 +51,15 @@ header {
   background: rgba(255, 255, 255, 0.06);
 }
 .divider {
-  @apply w-[138px] h-px shrink-0;
+  @apply w-[35%] h-px shrink-0;
+  background: rgba(24, 24, 25, 0.2);
+}
+.divider-vertical {
+  @apply w-px h-[37%] shrink-0;
   background: rgba(24, 24, 25, 0.2);
 }
 .timeline-circle {
-  @apply flex w-16 h-16 justify-center items-center gap-2.5 px-6 py-6 rounded-full border-4 border-solid border-[#03BF77];
+  @apply flex w-10 h-10 lg:w-16 lg:h-16 justify-center items-center gap-2.5 px-6 py-6 rounded-full border-4 border-solid border-[#03BF77];
   background: linear-gradient(
     270deg,
     rgba(3, 191, 119, 0.6) 0%,
@@ -63,7 +67,7 @@ header {
   );
 }
 .timeline-content {
-  @apply flex w-[280px] flex-col gap-4 p-6 rounded-3xl;
+  @apply flex  flex-col gap-4 p-6 rounded-3xl;
   background: #f3f3f3;
 }
 .faqs-grid {
@@ -85,7 +89,7 @@ header {
   background: #f3f3f3;
 }
 .interchainAgent-text {
-  @apply bg-clip-text text-lg not-italic font-medium leading-[33px];
+  @apply bg-clip-text not-italic font-medium;
   background: linear-gradient(180deg, #03bf77 0%, #7af861 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
