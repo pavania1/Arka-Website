@@ -67,12 +67,10 @@ header {
   background: #f3f3f3;
 }
 .faqs-grid {
-  @apply flex  gap-2 w-full p-6 rounded-2xl;
+  @apply flex gap-2 w-full p-6 rounded-2xl;
   background: #181819;
 }
-.header {
-  @apply text-[#09090A] text-[64px] not-italic font-bold leading-[90px] font-inter;
-}
+
 .community-grid {
   @apply w-full justify-between items-center backdrop-blur-[20px] px-20 py-10 rounded-3xl;
   background: linear-gradient(
