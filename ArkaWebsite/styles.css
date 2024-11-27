@@ -119,6 +119,53 @@ header {
   @apply flex flex-col justify-center items-center gap-2.5 px-6 py-10;
   background: #181819;
 }
+
+
+/* Carousal */
+.layer-carousel {
+  @apply transition-transform duration-[0.3s] ease-[ease-in-out] w-full;
+}
+.layer-slide {
+  @apply w-full p-8;
+}
+.arka-build-grid {
+  @apply transition-all duration-[0.3s] ease-[ease] p-6 rounded-2xl hover:-translate-y-0.5;
+  background: rgba(255, 255, 255, 0.1);
+}
+.arka-build-grid:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.arka-build-headers {
+  @apply text-[2rem] font-semibold text-[white] mb-6;
+}
+.carousel-dot {
+  @apply w-3 h-3 bg-[rgba(255,255,255,0.3)] cursor-pointer transition-all duration-[0.3s] ease-[ease] rounded-[50%] border-[none];
+  outline: none;
+}
+.carousel-dot.active {
+  @apply bg-[white] scale-[1.2];
+}
+@media (max-width: 1024px) {
+  .layer-slide {
+    @apply p-4;
+  }
+  .arka-build-headers {
+    @apply text-2xl;
+  }
+  .arka-build-grid {
+    @apply p-4;
+  }
+}
+@media (max-width: 640px) {
+  .layer-slide {
+    @apply flex-[0_0_100%] max-w-full p-2;
+  }
+  .arka-build-headers {
+    @apply text-xl;
+  }
+}
+
+
 .hover-box {
   transition: transform 0.3s ease;
 }
