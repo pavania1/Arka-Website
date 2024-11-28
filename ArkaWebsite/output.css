@@ -626,10 +626,6 @@ video {
   top: 4rem;
 }
 
-.top-\[-65px\] {
-  top: -65px;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -642,12 +638,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mt-6 {
@@ -664,14 +664,6 @@ video {
 
 .mt-\[120px\] {
   margin-top: 120px;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .box-border {
@@ -738,8 +730,8 @@ video {
   height: 1px;
 }
 
-.h-\[50\%\] {
-  height: 50%;
+.h-\[45\%\] {
+  height: 45%;
 }
 
 .h-\[75\%\] {
@@ -756,6 +748,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[85vh\] {
+  max-height: 85vh;
 }
 
 .\!w-fit {
@@ -872,10 +868,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -916,6 +908,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
@@ -936,16 +932,12 @@ video {
   border-radius: 24px 24px 24px 24px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-tl-2xl {
+  border-top-left-radius: 1rem;
 }
 
-.rounded-tl-xl {
-  border-top-left-radius: 0.75rem;
-}
-
-.rounded-tr-xl {
-  border-top-right-radius: 0.75rem;
+.rounded-tr-2xl {
+  border-top-right-radius: 1rem;
 }
 
 .\!bg-\[\#09090A\] {
@@ -1099,9 +1091,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[32px\] {
@@ -1188,8 +1180,8 @@ video {
   line-height: 33px;
 }
 
-.leading-\[64px\] {
-  line-height: 64px;
+.leading-\[60px\] {
+  line-height: 60px;
 }
 
 .leading-\[72px\] {
@@ -1399,7 +1391,7 @@ header {
 }
 
 .divider-vertical {
-  height: 37%;
+  height: 40%;
   width: 1px;
   flex-shrink: 0;
   background: rgba(24, 24, 25, 0.2);
@@ -1669,6 +1661,12 @@ header {
   }
 }
 
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-scrollbar: hidden;
+}
+
 .hover-box {
   transition: transform 0.3s ease;
 }
@@ -1854,6 +1852,10 @@ header {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {

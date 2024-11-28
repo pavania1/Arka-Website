@@ -55,7 +55,7 @@ header {
   background: rgba(24, 24, 25, 0.2);
 }
 .divider-vertical {
-  @apply w-px h-[37%] shrink-0;
+  @apply w-px h-[40%] shrink-0;
   background: rgba(24, 24, 25, 0.2);
 }
 .timeline-circle {
@@ -120,7 +120,6 @@ header {
   background: #181819;
 }
 
-
 /* Carousal */
 .layer-carousel {
   @apply transition-transform duration-[0.3s] ease-[ease-in-out] w-full;
@@ -164,7 +163,11 @@ header {
     @apply text-xl;
   }
 }
-
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-scrollbar: hidden;
+}
 
 .hover-box {
   transition: transform 0.3s ease;
@@ -186,13 +189,6 @@ header {
 .box4:hover {
   transform: translate(-15px, 15px); /* Move opposite direction */
 }
-
-
-
-
-
-
-
 
 /* layers css */
 
