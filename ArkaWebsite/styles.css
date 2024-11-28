@@ -186,3 +186,55 @@ header {
 .box4:hover {
   transform: translate(-15px, 15px); /* Move opposite direction */
 }
+
+
+
+
+
+
+
+
+/* layers css */
+
+.container {
+  @apply h-screen flex;
+}
+.content {
+  @apply flex-1 overflow-y-auto scroll-smooth box-border p-5;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.content::-webkit-scrollbar {
+  @apply hidden;
+}
+.images {
+  @apply flex-1 flex relative;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.image-stack img {
+  @apply absolute max-w-[80%] max-h-[80%] box-border rotate-0 opacity-0;
+  /* width: 30%; */
+  /* height: auto; */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.image-stack img:nth-child(1) {
+  @apply rotate-[-10deg] translate-y-0 z-10;
+}
+.image-stack img:nth-child(2) {
+  @apply rotate-[-5deg] translate-y-0 z-[9];
+}
+.image-stack img:nth-child(3) {
+  @apply rotate-[5deg] translate-y-0 z-[8];
+}
+.image-stack img:nth-child(4) {
+  @apply rotate-[10deg] translate-y-0 z-[7];
+}
+.image-stack img.hidden {
+  @apply opacity-0;
+}
+.section-content {
+  @apply min-h-screen flex text-2xl;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
