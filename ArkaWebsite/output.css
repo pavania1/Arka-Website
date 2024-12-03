@@ -754,22 +754,6 @@ video {
   height: 100vh;
 }
 
-.h-\[85vh\] {
-  height: 85vh;
-}
-
-.h-\[75vh\] {
-  height: 75vh;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.max-h-\[85vh\] {
-  max-height: 85vh;
-}
-
 .\!w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
