@@ -142,7 +142,7 @@ header {
   outline: none;
 }
 .carousel-dot.active {
-  @apply bg-[white] scale-[1.2];
+  @apply bg-[white];
 }
 @media (max-width: 1024px) {
   .layer-slide {
