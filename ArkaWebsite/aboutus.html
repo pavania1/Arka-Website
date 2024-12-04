@@ -119,11 +119,11 @@
                 class="space-y-4 flex flex-col relative w-full h-full justify-end items-start"
               >
                 <h1
-                  class="text-white text-4xl sm:text-6xl md:text-7xl lg:text-[100px] not-italic font-extrabold leading-tight lg:leading-[120px] font-inter"
+                  class="text-white text-4xl sm:text-6xl md:text-7xl lg:text-[100px] not-italic font-extrabold leading-tight lg:leading-[120px] font-inter arka-network-section"
                 >
-                  <p>THE</p>
-                  <p>ARKA</p>
-                  <p>NETWORK</p>
+                  <span class="hideLine" id="the">THE</span><br />
+                  <span class="hideLine" id="arka">ARKA</span><br />
+                  <span class="hideLine" id="network">NETWORK</span>
                 </h1>
                 <p
                   class="text-white text-2xl sm:text-4xl md:text-5xl lg:text-[64px] not-italic font-thin leading-tight lg:leading-[120px] font-inter"
@@ -146,9 +146,9 @@
             <div class="h-1 bg-[#09090A] mx-6 lg:mx-0 mb-6"></div>
 
             <div
-              class="flex flex-col lg:flex-row gap-6 pt-1 lg:gap-10 lg:gap-20 lg:pt-10 px-6 lg:px-0"
+              class="flex flex-col lg:flex-row gap-6 pt-1 lg:gap-10 lg:gap-20 lg:pt-10 px-6 lg:px-0 w-full"
             >
-              <div class="flex flex-col gap-6 lg:gap-10">
+              <div class="flex flex-col gap-6 lg:gap-10 w-[35%]">
                 <div
                   class="font-inter text-[#09090A] not-italic leading-[120px] lg:block hidden"
                 >
@@ -182,12 +182,19 @@
                 </div>
               </div>
               <div
-                class="text-[#09090A] text-[40px] lg:text-[90px] not-italic font-black leading-[54px] lg:leading-[120px] font-inter !pr-10 !lg:mt-10"
+                class="text-[#09090A] text-[40px] lg:text-[90px] not-italic font-black leading-[54px] lg:leading-[120px] font-inter !pr-10 !lg:mt-10 open-secure"
               >
-                <p class="">Open</p>
+                <!-- <p class="">Open</p>
                 <p class="">Secure</p>
                 <p>Sovereign</p>
-                <p>Decentralized</p>
+                <p>Decentralized</p> -->
+                <span class="line hideLine" id="open">Open</span> <br />
+                <span class="line hideLine" id="secure">Secure</span> <br />
+                <span class="line hideLine" id="sovereign">Sovereign</span>
+                <br />
+                <span class="line hideLine" id="decentralize"
+                  >Decentralized</span
+                >
               </div>
             </div>
           </div>
@@ -353,10 +360,10 @@
             <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
               <div class="layer hidden lg:flex"></div>
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:block community-section"
               >
-                Join our <br />
-                Community
+                <span class="line hideLine" id="join">Join our </span> <br />
+                <span class="line hideLine" id="community">Community</span>
               </div>
               <div
                 class="text-white text-2xl not-italic font-bold leading-8 font-inter flex lg:hidden"
@@ -588,4 +595,5 @@
       navMenu.classList.toggle("hidden");
     });
   </script>
+  <script src="layers.js"></script>
 </html>

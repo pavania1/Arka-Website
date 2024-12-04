@@ -158,9 +158,9 @@ const observer = new IntersectionObserver(
 
           line1.classList.remove("hideLine");
 
-          typeText("Arkabuilds", "Arka builds the", 50, () => {
+          typeText("Arkabuilds", "Arka builds the", 1, () => {
             line2.classList.remove("hideLine");
-            typeText("DeAI", " DeAI Stack.", 50);
+            typeText("DeAI", " DeAI Stack.", 1);
           });
         } else if (
           entry.target.className.includes("interchain-agent-section")
@@ -174,23 +174,17 @@ const observer = new IntersectionObserver(
             line2.classList.remove("hideLine");
             typeText("Agent", "Agent", 50);
           });
-        } else if (
-          entry.target.className.includes("FAQs-section")
-        ) {
+        } else if (entry.target.className.includes("FAQs-section")) {
           const line1 = document.getElementById("faqs");
           line1.classList.remove("hideLine");
 
           typeText("faqs", "FAQs", 100);
-        } else if (
-          entry.target.className.includes("whats-New-section")
-        ) {
+        } else if (entry.target.className.includes("whats-New-section")) {
           const line1 = document.getElementById("whatsnew");
           line1.classList.remove("hideLine");
 
-          typeText("whatsnew", "Whats new?",50);
-        } else if (
-          entry.target.className.includes("community-section")
-        ) {
+          typeText("whatsnew", "Whats new?", 50);
+        } else if (entry.target.className.includes("community-section")) {
           const line1 = document.getElementById("join");
           const line2 = document.getElementById("community");
 
@@ -200,6 +194,36 @@ const observer = new IntersectionObserver(
             line2.classList.remove("hideLine");
             typeText("community", "Community", 50);
           });
+        } else if (entry.target.className.includes("arka-network-section")) {
+          const line1 = document.getElementById("the");
+          const line2 = document.getElementById("arka");
+          const line3 = document.getElementById("network");
+
+          line1.classList.remove("hideLine");
+          typeText("the", "The", 50, () => {
+            line2.classList.remove("hideLine");
+            typeText("arka", "Arka", 50, () => {
+              line3.classList.remove("hideLine");
+              typeText("network", "Network", 50);
+            });
+          });
+        } else if (entry.target.className.includes("open-secure")) {
+          const line1 = document.getElementById("open");
+          const line2 = document.getElementById("secure");
+          const line3 = document.getElementById("sovereign");
+          const line4 = document.getElementById("decentralize");
+
+          line1.classList.remove("hideLine");
+          typeText("open", "Open", 50, () => {
+            line2.classList.remove("hideLine");
+            typeText("secure", "Secure", 50, () => {
+              line3.classList.remove("hideLine");
+              typeText("sovereign", "Sovereign", 50, () => {
+                line4.classList.remove("hideLine");
+                typeText("decentralize", "Decentralized", 50)
+              })
+            })
+          })
         }
 
         observer.unobserve(entry.target);
@@ -212,11 +236,13 @@ const observer = new IntersectionObserver(
 const sectionOneTyping = () => {
   const line1 = document.getElementById("Liberating");
   const line2 = document.getElementById("Sovereignty");
-  line1.classList.remove("hideLine");
-  typeText("Liberating", "Liberating AI", 50, () => {
-    line2.classList.remove("hideLine");
-    typeText("Sovereignty", "Sovereignty", 50);
-  });
+  if(line1 && line2){
+    line1.classList.remove("hideLine");
+    typeText("Liberating", "Liberating AI", 50, () => {
+      line2.classList.remove("hideLine");
+      typeText("Sovereignty", "Sovereignty", 50);
+    });
+  }
 };
 
 const sectionTwoTyping = () => {
@@ -247,18 +273,31 @@ const sectionSixthTyping = () => {
   if (whatsNew) {
     observer.observe(whatsNew);
   }
-}
+};
 const sectionSeventhTyping = () => {
   const JoinCommunity = document.querySelector(".community-section");
   if (JoinCommunity) {
     observer.observe(JoinCommunity);
+  }
+};
+
+const sectionOneAboutusTyping = () => {
+  const ArkaNetwork = document.querySelector(".arka-network-section");
+  if (ArkaNetwork) {
+    observer.observe(ArkaNetwork);
+  }
+};
+const sectionTwoAboutusTyping = () => {
+  const OpenSecure = document.querySelector(".open-secure");
+  if (OpenSecure) {
+    observer.observe(OpenSecure);
   }
 }
 
 // Scroll event listener with throttling
 document
   .querySelector(".content")
-  .addEventListener("scroll", handleScroll, { passive: true });
+  ?.addEventListener("scroll", handleScroll, { passive: true });
 
 // Initialize on load
 document.addEventListener("DOMContentLoaded", () => {
@@ -272,6 +311,8 @@ document.addEventListener("DOMContentLoaded", () => {
   sectionFifthTyping();
   sectionSixthTyping();
   sectionSeventhTyping();
+  sectionOneAboutusTyping();
+  sectionTwoAboutusTyping();
 });
 
 // Optional: Add resize handler
