@@ -6,7 +6,6 @@
     <title>ARKA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="carousel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -120,10 +119,14 @@
             >
               <div class="gap-4 lg:gap-6 flex flex-col z-10 relative">
                 <h1
-                  class="text-white text-4xl lg:text-[100px] not-italic font-extrabold leading-[60px] lg:leading-[120px] font-inter"
+                  class="text-white text-4xl lg:text-[100px] not-italic font-extrabold leading-[60px] lg:leading-[120px] font-inter typing-container"
                 >
-                  Liberating AI <br />
-                  Sovereignty
+                  <span class="line hideLine" id="Liberating"
+                    >Liberating AI</span
+                  ><br />
+                  <span class="line hideLine" id="Sovereignty"
+                    >Sovereignty</span
+                  >
                 </h1>
                 <p
                   class="text-[rgba(255,255,255,0.90)] text-base lg:text-2xl not-italic font-light leading-6 lg:leading-[33px] font-nunito"
@@ -773,11 +776,11 @@
           <div class="flex justify-between w-full items-start">
             <!-- Left Content -->
             <div
-              class="text-white text-[64px] not-italic font-bold leading-[72px] max-w-[50%] font-inter"
+              class="text-white text-[64px] not-italic font-bold leading-[72px] max-w-[50%] font-inter typing-container web-arkabuilds-section"
             >
-              Arka builds the
-              <br />
-              DeAI Stack.
+              <span class="line hideLine" id="Arkabuilds">Arka builds the</span
+              ><br />
+              <span class="line hideLine" id="DeAI">DeAI Stack.</span>
             </div>
             <!-- Right Content -->
             <div
@@ -1185,12 +1188,13 @@
         <div class="flex platform-section py-10 px-6 lg:p-20">
           <div class="flex flex-1 flex-col lg:flex-row gap-10">
             <div class="flex flex-col gap-6 lg:gap-10 lg:w-[50%] h-[75%]">
-              <div
-                class="text-[#09090A] text-[80px] not-italic font-bold leading-[90px] font-inter hidden lg:flex"
+              <h1
+                class="text-[#09090A] text-[80px] not-italic font-bold leading-[90px] font-inter hidden lg:block interchain-agent-section"
               >
-                Interchain <br />
-                Agent
-              </div>
+                <span class="hideLine" id="Interchain"> Interchain </span>
+                <br />
+                <span class="hideLine" id="Agent"> Agent </span>
+              </h1>
               <div
                 class="text-[#09090A] text-[32px] not-italic font-bold leading-10 font-inter flex lg:hidden"
               >
@@ -1613,9 +1617,9 @@
           <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
             <div class="flex flex-col gap-4 lg:gap-6 w-full lg:w-[40%]">
               <h1
-                class="text-[#EAEAEA] text-[32px] lg:text-[64px] not-italic font-bold leading-10 lg:leading-[72px] font-inter"
+                class="text-[#EAEAEA] text-[32px] lg:text-[64px] not-italic font-bold leading-10 lg:leading-[72px] font-inter FAQs-section"
               >
-                FAQs
+                <span class="hideLine" id="faqs">FAQs</span>
               </h1>
               <p
                 class="text-[rgba(255,255,255,0.90)] text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
@@ -1825,11 +1829,11 @@
         <div class="flex platform-section px-6 py-10 lg:p-20">
           <div class="flex flex-col gap-6 lg:gap-10 w-full">
             <div class="flex flex-col lg:flex-row justify-between w-full">
-              <div
-                class="text-[#09090A] text-[32px] lg:text-[64px] not-italic font-bold leading-10 lg:leading-[90px] font-inter"
+              <h1
+                class="text-[#09090A] text-[32px] lg:text-[64px] not-italic font-bold leading-10 lg:leading-[90px] font-inter whats-New-section"
               >
-                Whats new ?
-              </div>
+                <span class="hideLine" id="whatsnew">Whats new ?</span>
+              </h1>
               <div
                 class="text-[rgba(9,9,10,0.90)] text-sm lg:text-2xl not-italic font-extralight leading-[21px] lg:leading-[normal] font-nunito"
               >
@@ -2098,10 +2102,10 @@
             <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
               <div class="layer hidden lg:flex"></div>
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:block community-section"
               >
-                Join our <br />
-                Community
+                <span class="line hideLine" id="join">Join our </span> <br />
+                <span class="line hideLine" id="community">Community</span>
               </div>
               <div
                 class="text-white text-2xl not-italic font-bold leading-8 font-inter flex lg:hidden"

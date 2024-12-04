@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1788,6 +1788,24 @@ header {
   line-height: 2rem;
   /* justify-content: center; */
   /* align-items: center; */
+}
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  /* color: white; */
+}
+
+.hideLine {
+  color: transparent;
 }
 
 .hover\:scale-105:hover {

@@ -234,3 +234,21 @@ header {
   /* justify-content: center; */
   /* align-items: center; */
 }
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  /* color: white; */
+}
+
+.hideLine {
+  color: transparent;
+}
