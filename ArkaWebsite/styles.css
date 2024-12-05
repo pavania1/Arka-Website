@@ -36,7 +36,7 @@ header {
   background: linear-gradient(90deg, #03bf77 0%, #f0f076 100%);
 }
 .nav-text {
-  @apply text-[rgba(255,255,255,0.80)] text-right text-lg not-italic font-normal leading-[normal] font-nunito hover:underline flex;
+  @apply text-[rgba(255,255,255,0.80)] text-right text-sm not-italic font-normal leading-[normal] font-nunito hover:underline flex uppercase	;
 }
 .arka-builds-section {
   @apply shadow-[100px_100px_100px_0px_rgba(0,0,0,0.04)] flex flex-col items-start w-full p-20;
@@ -193,7 +193,7 @@ header {
 /* layers css */
 
 .container {
-  @apply h-screen flex;
+  @apply h-[70vh] flex;
 }
 .content {
   @apply flex-1 overflow-y-auto scroll-smooth box-border p-5;
@@ -230,7 +230,7 @@ header {
   @apply opacity-0;
 }
 .section-content {
-  @apply min-h-screen flex text-2xl;
+  @apply min-h-[50vh] flex text-2xl;
 }
 
 .typing-container {
@@ -249,4 +249,10 @@ header {
 
 .hideLine {
   color: transparent;
+}
+.hideButton {
+  display: none;
+}
+.showButton {
+  display: block;
 }

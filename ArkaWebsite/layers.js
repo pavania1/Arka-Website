@@ -110,7 +110,7 @@ const handleScroll = () => {
     window.requestAnimationFrame(() => {
       const content = document.querySelector(".content");
       const scrollPosition = content.scrollTop;
-      const windowHeight = window.innerHeight;
+      const windowHeight = window.innerHeight/1;
 
       // Calculate which section is currently in view
       const nextSection = Math.round(scrollPosition / windowHeight);
@@ -266,6 +266,11 @@ const observer = new IntersectionObserver(
           line1.classList.remove("hideLine");
 
           typeText("blogOne", "Monthly Summary October", 50);
+        } else if (entry.target.className.includes("Blog-two")) {
+          const line1 = document.getElementById("blogTwo");
+          line1.classList.remove("hideLine");
+
+          typeText("blogTwo", "Introducing Arka Network", 50);
         }
         observer.unobserve(entry.target);
       }
@@ -362,6 +367,12 @@ const sectionInternalBlogOne = () => {
     observer.observe(InternalBlogOne)
   }
 }
+const sectionInternalBlogTwo = () => {
+  const InternalBlogTwo = document.querySelector(".Blog-Two");
+  if (InternalBlogTwo) {
+    observer.observe(InternalBlogTwo)
+  }
+}
 
 // Scroll event listener with throttling
 document
@@ -387,6 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sectionWantToBuildUs();
   sectionBlog();
   sectionInternalBlogOne();
+  sectionInternalBlogTwo();
 });
 
 // Optional: Add resize handler
