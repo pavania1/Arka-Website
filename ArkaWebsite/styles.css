@@ -231,8 +231,6 @@ header {
 }
 .section-content {
   @apply min-h-screen flex text-2xl;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .typing-container {
