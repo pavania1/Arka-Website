@@ -224,8 +224,49 @@ const observer = new IntersectionObserver(
               })
             })
           })
-        }
+        } else if (entry.target.className.includes("why-exist")) {
+          const line1 = document.getElementById("centralized");
+          const line2 = document.getElementById("sover");
+          const line3 = document.getElementById("border");
 
+          line1.classList.remove("hideLine");
+          typeText("centralized", "Centralized", 50, () => {
+            line2.classList.remove("hideLine");
+            typeText("sover", "Sovereign", 50, () => {
+              line3.classList.remove("hideLine");
+              typeText("border", "Borderless", 50);
+            });
+          });
+          
+        } else if (entry.target.className.includes("ai-developer")) {
+          const line1 = document.getElementById("build");
+          const line2 = document.getElementById("scale");
+          const line3 = document.getElementById("monetize");
+
+          line1.classList.remove("hideLine");
+          typeText("build", "Build", 50, () => {
+            line2.classList.remove("hideLine");
+            typeText("scale", "Scale", 50, () => {
+              line3.classList.remove("hideLine");
+              typeText("monetize", "Monetize", 50);
+            });
+          });
+        }else if (entry.target.className.includes("want-to-build")) {
+          const line1 = document.getElementById("wantto");
+          line1.classList.remove("hideLine");
+
+          typeText("wantto", "Want to build with us ?", 50);
+        } else if (entry.target.className.includes("blog-section")) {
+          const line1 = document.getElementById("blog");
+          line1.classList.remove("hideLine");
+
+          typeText("blog", "Blog", 50);
+        }else if (entry.target.className.includes("Blog-One")) {
+          const line1 = document.getElementById("blogOne");
+          line1.classList.remove("hideLine");
+
+          typeText("blogOne", "Monthly Summary October", 50);
+        }
         observer.unobserve(entry.target);
       }
     });
@@ -245,9 +286,7 @@ const sectionOneTyping = () => {
   }
 };
 
-const sectionTwoTyping = () => {
-  //
-};
+
 
 const sectionThreeTyping = () => {
   const arkaBuildSection = document.querySelector(".web-arkabuilds-section");
@@ -293,6 +332,36 @@ const sectionTwoAboutusTyping = () => {
     observer.observe(OpenSecure);
   }
 }
+const sectionFourAboutusTyping = () => {
+  const WhyweExist = document.querySelector(".why-exist");
+  if (WhyweExist) {
+    observer.observe(WhyweExist)
+  }
+}
+const sectionOneAiDeveloperTyping = () => {
+  const AiDeveloper = document.querySelector(".ai-developer");
+  if (AiDeveloper) {
+    observer.observe(AiDeveloper)
+  }
+}
+const sectionWantToBuildUs = () => {
+  const WantTobuild = document.querySelector(".want-to-build");
+  if (WantTobuild) {
+    observer.observe(WantTobuild)
+  }
+}
+const sectionBlog = () => {
+  const BlogSection = document.querySelector(".blog-section");
+  if (BlogSection) {
+    observer.observe(BlogSection)
+  }
+}
+const sectionInternalBlogOne = () => {
+  const InternalBlogOne = document.querySelector(".Blog-One");
+  if (InternalBlogOne) {
+    observer.observe(InternalBlogOne)
+  }
+}
 
 // Scroll event listener with throttling
 document
@@ -305,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sectionOneTyping();
 
-  sectionTwoTyping();
+  
   sectionThreeTyping();
   sectionFourthTyping();
   sectionFifthTyping();
@@ -313,6 +382,11 @@ document.addEventListener("DOMContentLoaded", () => {
   sectionSeventhTyping();
   sectionOneAboutusTyping();
   sectionTwoAboutusTyping();
+  sectionFourAboutusTyping();
+  sectionOneAiDeveloperTyping();
+  sectionWantToBuildUs();
+  sectionBlog();
+  sectionInternalBlogOne();
 });
 
 // Optional: Add resize handler

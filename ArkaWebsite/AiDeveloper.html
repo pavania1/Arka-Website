@@ -117,11 +117,12 @@
             <section class="flex flex-1 justify-center items-center w-full">
               <div class="space-y-4 flex flex-col z-10 relative w-full">
                 <h1
-                  class="text-white text-[64px] lg:text-[100px] not-italic font-extrabold leading-[80px] lg:leading-[120px] font-inter"
+                  class="text-white text-[64px] lg:text-[100px] not-italic font-extrabold leading-[80px] lg:leading-[120px] font-inter ai-developer"
                 >
-                  <p>Build</p>
-                  <p>Scale</p>
-                  <p>Monetize</p>
+                  <span class="line hideLine" id="build">Build</span><br />
+                  <span class="line hideLine" id="scale">Scale</span>
+                  <br />
+                  <span class="line hideLine" id="monetize">Monetize</span>
                 </h1>
                 <p
                   class="text-[rgba(255,255,255,0.90)] text-base lg:text-2xl not-italic font-light leading-6 lg:leading-[33px] font-nunito"
@@ -439,9 +440,11 @@
             <div class="flex flex-col">
               <div class="layer"></div>
               <div
-                class="text-white text-[32px] lg:text-[40px] not-italic font-bold leading-[normal] font-inter"
+                class="text-white text-[32px] lg:text-[40px] not-italic font-bold leading-[normal] font-inter want-to-build"
               >
-                Want to build with us ?
+                <span class="hideLine" id="wantto"
+                  >Want to build with us ?</span
+                >
               </div>
               <div
                 class="text-[rgba(255,255,255,0.90)] text-sm lg:text-2xl not-italic font-extralight leading-[33px] font-nunito"
@@ -477,10 +480,10 @@
               <div class="layer hidden lg:flex"></div>
 
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:block community-section"
               >
-                Join our <br />
-                Community
+                <span class="line hideLine" id="join">Join our </span> <br />
+                <span class="line hideLine" id="community">Community</span>
               </div>
               <a href="">
                 <div
@@ -734,4 +737,5 @@
       navMenu.classList.toggle("hidden");
     });
   </script>
+  <script src="layers.js"></script>
 </html>

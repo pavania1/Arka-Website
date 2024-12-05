@@ -114,9 +114,11 @@
             <div class="flex-grow flex justify-center items-center">
               <section class="flex flex-col gap-6 text-left lg:text-center">
                 <p
-                  class="text-white text-2xl lg:text-[54px] not-italic font-bold leading-10 lg:leading-[80px] font-inter"
+                  class="text-white text-2xl lg:text-[54px] not-italic font-bold leading-10 lg:leading-[80px] font-inter Blog-One"
                 >
-                  Monthly summmary October
+                  <span class="hideLine" id="blogOne"
+                    >Monthly Summary October</span
+                  >
                 </p>
                 <p
                   class="text-white text-base lg:text-lg not-italic font-normal leading-6 lg:leading-[normal] font-nunito"
@@ -405,10 +407,10 @@
             <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
               <div class="layer hidden lg:flex"></div>
               <div
-                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:flex"
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:block community-section"
               >
-                Join our <br />
-                Community
+                <span class="line hideLine" id="join">Join our </span> <br />
+                <span class="line hideLine" id="community">Community</span>
               </div>
 
               <div
@@ -664,4 +666,5 @@
       navMenu.classList.toggle("hidden");
     });
   </script>
+  <script src="layers.js"></script>
 </html>
