@@ -110,7 +110,7 @@ const handleScroll = () => {
     window.requestAnimationFrame(() => {
       const content = document.querySelector(".content");
       const scrollPosition = content.scrollTop;
-      const windowHeight = window.innerHeight/1.45;
+      const windowHeight = window.innerHeight/1.4;
 
       // Calculate which section is currently in view
       const nextSection = Math.round(scrollPosition / windowHeight);
@@ -200,11 +200,11 @@ const observer = new IntersectionObserver(
           const line3 = document.getElementById("network");
 
           line1.classList.remove("hideLine");
-          typeText("the", "The", 50, () => {
+          typeText("the", "THE", 50, () => {
             line2.classList.remove("hideLine");
-            typeText("arka", "Arka", 50, () => {
+            typeText("arka", "ARKA", 50, () => {
               line3.classList.remove("hideLine");
-              typeText("network", "Network", 50);
+              typeText("network", "NETWORK", 50);
             });
           });
         } else if (entry.target.className.includes("open-secure")) {

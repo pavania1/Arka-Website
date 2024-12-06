@@ -54,7 +54,7 @@
                 />
               </svg>
               <svg
-              id="closeIcon"
+                id="closeIcon"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-8 w-8"
                 fill="none"
@@ -135,7 +135,7 @@
               class="bg-cover bg-center h-[45%] lg:hidden"
               style="background-image: url('images/newchain.png')"
             ></div>
-            <div class="h-[45%] w-6 hidden lg:block md:block "></div>
+            <div class="h-[45%] w-6 hidden lg:block md:block"></div>
 
             <div
               class="gap-6 lg:gap-10 flex flex-col lg:justify-center items-start px-6 lg:px-0"
@@ -166,7 +166,9 @@
                 Join our community
               </button>
             </div>
-            <div class="absolute z-0 top-0 right-0 hidden lg:block h-screen overflow-hidden">
+            <div
+              class="absolute z-0 top-0 right-0 hidden lg:block h-screen overflow-hidden"
+            >
               <img
                 src="images/newchain.png"
                 alt="chain-image"
@@ -2150,7 +2152,7 @@
                 <span class="line hideLine" id="community">Community</span>
               </div>
               <div
-                class="text-white text-2xl not-italic font-bold leading-8 font-inter  lg:hidden text-center"
+                class="text-white text-2xl not-italic font-bold leading-8 font-inter lg:hidden text-center"
               >
                 Join our Community
               </div>
@@ -2249,26 +2251,14 @@
               <div class="flex gap-10 text-[rgba(255,255,255,0.50)]">
                 <div class="flex flex-col justify-between uppercase">
                   <a href="AiDeveloper.html">
-                    <div
-                      class="nav-text"
-                    >
-                      AI develoeprs
-                    </div>
+                    <div class="nav-text">AI Builders</div>
                   </a>
                   <a href="aboutus.html">
-                    <div
-                      class="nav-text"
-                    >
-                      About Us
-                    </div>
+                    <div class="nav-text">About Us</div>
                   </a>
                   <a href="">
                     <div class="flex items-center">
-                      <div
-                        class="nav-text"
-                      >
-                        Whitepaper
-                      </div>
+                      <div class="nav-text">Whitepaper</div>
 
                       <img
                         src="images/redirect-icon.svg"
@@ -2281,27 +2271,15 @@
 
                 <div class="flex flex-col justify-between uppercase">
                   <a href="index.html">
-                    <div
-                      class="nav-text"
-                    >
-                      Home
-                    </div>
+                    <div class="nav-text">Home</div>
                   </a>
                   <a href="blogs.html">
-                    <div
-                      class="nav-text"
-                    >
-                      Blog
-                    </div>
+                    <div class="nav-text">Blog</div>
                   </a>
 
                   <a href="">
                     <div class="flex items-center">
-                      <div
-                        class="nav-text"
-                      >
-                        Docs
-                      </div>
+                      <div class="nav-text">Docs</div>
                       <img
                         src="images/redirect-icon.svg"
                         class="w-5 h-5"
@@ -2368,7 +2346,7 @@
         <p
           class="text-white text-center text-xs not-italic font-extralight leading-[normal] font-nunito"
         >
-         A unified platform for sovereign and decentralised AI agents.
+          A unified platform for sovereign and decentralised AI agents.
         </p>
         <div class="h-[1px] w-full bg-[#D9D9D980]"></div>
         <div class="flex items-center gap-4">
@@ -2398,20 +2376,19 @@
     // Hamburger menu functionality
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navMenu = document.getElementById("nav-menu");
-    const hamburgerIcon = document.getElementById("hamburgerIcon")
-    const closeIcon = document.getElementById("closeIcon")
+    const hamburgerIcon = document.getElementById("hamburgerIcon");
+    const closeIcon = document.getElementById("closeIcon");
 
-    closeIcon.classList.add("hideButton")
+    closeIcon.classList.add("hideButton");
     hamburgerBtn.addEventListener("click", () => {
       navMenu.classList.toggle("hidden");
-      if(closeIcon.classList.contains("hideButton")){
+      if (closeIcon.classList.contains("hideButton")) {
         closeIcon.classList.remove("hideButton");
         closeIcon.classList.add("showButton");
 
         hamburgerIcon.classList.remove("showButton");
         hamburgerIcon.classList.add("hideButton");
-
-      }else{
+      } else {
         closeIcon.classList.remove("showButton");
         closeIcon.classList.add("hideButton");
 
