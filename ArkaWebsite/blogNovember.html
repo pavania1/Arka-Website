@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARKA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-full h-full">
+      <!-- Main Section -->
+      <div class="bg-[#000] w-full flex h-[70vh] overflow-hidden">
+        <div
+          class="bg-no-repeat bg-cover bg-right-top w-full h-full bg-[url('images/blog-internal-small-bg.svg')] sm:bg-[url('images/blog-internal-small-bg.svg')] md:bg-[url('images/blog-bg.svg')] lg:bg-[url('images/blog-bg.svg')]"
+        >
+          <div
+            class="px-6 py-10 lg:p-20 lg:pt-[16px] mx-auto w-full h-full flex flex-col"
+          >
+            <!-- Header -->
+            <header
+              class="flex justify-between w-full items-center relative px-6 lg:px-0 py-6"
+            >
+              <div>
+                <a href="index.html">
+                  <img
+                    src="images/arka-logo.svg"
+                    alt="Arka-logo"
+                    draggable="false"
+                  />
+                </a>
+              </div>
+
+              <!-- Hamburger Menu Button (visible only on small screens) -->
+              <button id="hamburger-btn" class="lg:hidden text-white p-2">
+                <svg
+                  id="hamburgerIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <svg
+                  id="closeIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div
+                id="nav-menu"
+                class="lg:flex lg:gap-10 lg:items-center hidden absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-black lg:bg-transparent p-6 lg:p-0"
+              >
+                <nav class="flex flex-col lg:flex-row gap-6">
+                  <a href="AiDeveloper.html" class="nav-text">AI BUILDERS</a>
+                  <a href="aboutus.html" class="nav-text">About Us</a>
+                  <a href="blogs.html" class="nav-text capitilize">Blog</a>
+                  <a href="#" class="nav-text flex">
+                    Whitepaper
+                    <img
+                      src="images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-4 h-4 lg:w-5 lg:h-5"
+                      draggable="false"
+                    />
+                  </a>
+                  <a
+                    href="https://docs.arka.network/"
+                    target="_blank"
+                    class="nav-text flex"
+                  >
+                    Docs
+                    <img
+                      src="images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-4 h-4 lg:w-5 lg:h-5"
+                      draggable="false"
+                    />
+                  </a>
+                </nav>
+                <div class="flex space-x-4 mt-4 lg:mt-0">
+                  <a
+                    href="https://x.com/ArkaNetwork_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/twitter.png"
+                      alt="twitter-logo"
+                      class="h-8 w-8"
+                      draggable="false"
+                    />
+                  </a>
+                  <a
+                    href="https://discord.com/invite/pErZgnnp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/discord.png"
+                      alt="discord-logo"
+                      class="h-8 w-8"
+                      draggable="false"
+                    />
+                  </a>
+                </div>
+              </div>
+            </header>
+
+            <!-- Centered Content Section -->
+            <div class="flex-grow flex justify-center items-center">
+              <section class="flex flex-col gap-6 text-left lg:text-center">
+                <h1
+                  class="text-white text-2xl lg:text-[54px] not-italic font-bold leading-10 lg:leading-[80px] font-inter November-Blog"
+                >
+                  <span class="" id="novemberBlog"
+                    >Monthly Summary November</span
+                  >
+                </h1>
+
+                <p
+                  class="text-white text-base lg:text-lg not-italic font-normal leading-6 lg:leading-[normal] font-nunito"
+                >
+                  Published at 12th October 2024
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd Section -->
+      <div class="bg-white p-6 lg:p-20">
+        <div class="max-w-[1300px] mx-auto w-full h-full flex flex-col">
+          <div class="flex flex-col gap-6 lg:gap-10">
+            <div
+              class="flex items-center cursor-pointer"
+              onclick="window.location.href='blogs.html'"
+            >
+              <img
+                src="images/back-icon.svg"
+                alt="back-arrow-icon"
+                class="w-6 h-6 lg:w-8 lg:h-8"
+                draggable="false"
+              />
+              <p
+                class="text-[#09090A] text-base lg:text-[26px] not-italic font-medium leading-[normal] underline font-nunito"
+              >
+                Back
+              </p>
+            </div>
+
+            <div
+              class="text-[#333] text-justify text-lg not-italic font-normal leading-9 font-inter space-y-6 lg:space-y-10 lg:text-2xl"
+            >
+              <h1 class="text-2xl font-bold">Introduction</h1>
+              <p>
+                November marked another milestone for Arka Network as we
+                continued to push the boundaries of decentralized AI. From
+                platform advancements to enhanced developer tools, here's
+                everything that shaped this month at Arka.
+              </p>
+              <h1 class="text-2xl font-bold">Product Enhancements</h1>
+              <li>
+                <strong>Akash Bridge Support :</strong> We’re proud to announce
+                that Arka now integrates with the Akash Network, a decentralized
+                cloud marketplace. This allows us to harness its power for
+                efficient and cost-effective operations, marking a significant
+                step forward in decentralization.
+              </li>
+              <h1 class="text-2xl font-bold">
+                Dev Studio: Deployment and Playground Testing
+              </h1>
+              <li>
+                Our team introduced a developer studio, enabling seamless
+                deployment and testing of AI agents. This studio provides a
+                robust playground to iterate, refine, and validate agents before
+                they go live.
+              </li>
+              <h1 class="text-2xl font-bold">Looking Ahead</h1>
+              December is set to bring even more exciting developments:
+              <li>
+                <strong>Expanded Feature Releases: </strong>Further enhancements
+                to our interchain agent functionality and developer tools.
+              </li>
+              <li>
+                <strong>Community Engagement:</strong> More Twitter Spaces and
+                events to strengthen ties with our vibrant community.
+              </li>
+              <p>
+                Stay connected as we continue building the future of
+                decentralized AI with you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd section -->
+      <div class="bg-white p-6 lg:p-20">
+        <div class="mx-auto w-full h-full flex flex-col">
+          <div class="flex flex-col gap-10">
+            <div class="space-y-4">
+              <div
+                class="text-[#09090A] text-3xl not-italic font-bold leading-[50px] font-inter"
+              >
+                Read More
+              </div>
+              <div class="h-1 w-full bg-[#09090a]"></div>
+            </div>
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-6 md:gap-4 sm:gap-4 xs:gap-2"
+            >
+              <a
+                href="blogInternalIntroduction.html"
+                class="block transition transform hover:scale-105 hover:shadow-lg cursor-pointer"
+              >
+                <div
+                  class="flex flex-col items-start gap-4 w-full rounded-2xl bg-[#181819] h-[25vh] p-6"
+                >
+                  <div class="flex gap-1 items-center">
+                    <div
+                      class="text-white text-sm lg:text-2xl not-italic font-bold leading-[normal] underline"
+                    >
+                      Introducing Arka Network
+                    </div>
+                    <img
+                      src="images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-5 h-5"
+                      draggable="false"
+                    />
+                  </div>
+                  <div
+                    class="text-[rgba(255,255,255,0.90)] text-xs lg:text-base not-italic font-extralight leading-[normal] font-nunito whitespace-normal break-words"
+                  >
+                    Today, after months of innovation and relentless
+                    development, we’re thrilled to unveil Arka Network — a bold
+                    leap towards a future where AI is open, secure, trustless,
+                    and decentralized.
+                  </div>
+                  <div
+                    class="text-[rgba(255,255,255,0.90)] text-xs lg:text-base not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    12th oct 2024
+                  </div>
+                </div>
+              </a>
+              <a
+                href="blogInternal.html"
+                class="block transition transform hover:scale-105 cursor-pointer"
+              >
+                <div
+                  class="flex flex-col items-start gap-4 w-full rounded-2xl bg-[#181819] h-[25vh] p-6"
+                >
+                  <div class="flex gap-1 items-center">
+                    <div
+                      class="text-white text-sm lg:text-2xl not-italic font-bold leading-[normal] underline"
+                    >
+                      Monthly summary - October
+                    </div>
+                    <img
+                      src="images/redirect-icon.svg"
+                      alt="redirect-icon"
+                      class="w-5 h-5"
+                      draggable="false"
+                    />
+                  </div>
+                  <div
+                    class="text-[rgba(255,255,255,0.90)] text-xs lg:text-base not-italic font-extralight leading-[normal] font-nunito whitespace-normal break-words"
+                  >
+                    Catch up on Arka's October highlights! From product updates
+                    to community milestones, dive into the key moments shaping
+                    our journey.
+                  </div>
+                  <div
+                    class="text-[rgba(255,255,255,0.90)] text-xs lg:text-base not-italic font-extralight leading-[normal] font-nunito"
+                  >
+                    23rd oct 2024
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#000] w-full justify-center flex p-6 lg:pt-20 lg:px-20">
+        <div class="flex flex-col w-full">
+          <div
+            class="flex flex-col lg:flex-row w-full lg:justify-between lg:backdrop-blur-[20px] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.08)0%,rgba(204,204,204,0.08)50%,rgba(255,255,255,0.08)100%)] lg:px-20 lg:py-10 lg:rounded-3xl"
+          >
+            <div class="flex flex-col gap-1 lg:gap-6 lg:py-10">
+              <div class="layer hidden lg:flex"></div>
+              <div
+                class="text-white text-[64px] not-italic font-bold leading-[normal] font-inter hidden lg:block community-section"
+              >
+                <span class="line hideLine" id="join">Join our </span> <br />
+                <span class="line hideLine" id="community">Community</span>
+              </div>
+              <div
+                class="text-white text-2xl not-italic font-bold leading-8 font-inter lg:hidden text-center"
+              >
+                Join our Community
+              </div>
+              <div
+                class="text-[rgba(255,255,255,0.50)] not-italic font-extralight leading-[33px] font-nunito hidden text-xl lg:flex"
+              >
+                Connect, collaborate, and build the future of AI with us!!!
+              </div>
+              <div
+                class="text-[rgba(255,255,255,0.50)] not-italic font-extralight leading-[33px] font-nunito text-xs lg:hidden text-center"
+              >
+                Connect, collaborate, and build the future of AI with us!!!
+              </div>
+              <div class="h-[1px] bg-[#D9D9D980] w-full lg:hidden"></div>
+            </div>
+
+            <div class="flex gap-10 justify-center lg:flex-col lg:gap-20 mt-6">
+              <a
+                href="https://discord.com/invite/pErZgnnp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="social-cards py-4 px-2 lg:px-20 lg:py-6 gap-2 lg:gap-10 lg:translate-x-[-150px] lg:translate-y-0"
+                >
+                  <img
+                    src="images/discord-logo.png"
+                    alt="discord-logo"
+                    class="w-10 h-10 lg:w-20 lg:h-20"
+                    draggable="false"
+                  />
+                  <div class="flex sapce-x-1 items-center">
+                    <div
+                      class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
+                    >
+                      Discord
+                    </div>
+                    <img
+                      src="images/link.svg"
+                      alt="redirect-icon"
+                      class="w-6 h-5 lg:w-9 lg:h-8"
+                      draggable="false"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://x.com/ArkaNetwork_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="social-cards px-2 py-4 lg:px-20 lg:py-6 gap-2 lg:gap-10"
+                >
+                  <img
+                    src="images/twitter-logo.png"
+                    alt="twitter-logo"
+                    class="w-10 h-10 lg:w-20 lg:h-20"
+                    draggable="false"
+                  />
+                  <div class="flex sapce-x-1 items-center">
+                    <div
+                      class="text-black text-center not-italic font-bold leading-[normal] underline text-sm lg:text-2xl"
+                    >
+                      Twitter
+                    </div>
+                    <img
+                      src="images/link.svg"
+                      alt="redirect-icon"
+                      class="w-5 h-5 lg:w-8 lg:h-8"
+                      draggable="false"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col mt-[120px] hidden lg:flex">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col gap-6">
+                <a href="index.html">
+                  <img
+                    src="images/arka-logo.svg"
+                    alt="Arka-logo"
+                    class=""
+                    draggable="false"
+                  />
+                </a>
+                <p
+                  class="text-[rgba(255,255,255,0.50)] text-lg not-italic font-extralight leading-[normal] font-nunito"
+                >
+                  A unified platform for sovereign <br />and decentralised AI
+                  agents.
+                </p>
+              </div>
+              <div class="flex gap-10 text-[rgba(255,255,255,0.50)]">
+                <div class="flex flex-col justify-between uppercase">
+                  <a href="AiDeveloper.html">
+                    <div class="nav-text">AI Builders</div>
+                  </a>
+                  <a href="aboutus.html">
+                    <div class="nav-text">About Us</div>
+                  </a>
+                  <a href="">
+                    <div class="flex items-center">
+                      <div class="nav-text">Whitepaper</div>
+
+                      <img
+                        src="images/redirect-icon.svg"
+                        class="w-5 h-5"
+                        draggable="false"
+                      />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="flex flex-col justify-between uppercase">
+                  <a href="index.html">
+                    <div class="nav-text">Home</div>
+                  </a>
+                  <a href="blogs.html">
+                    <div class="nav-text">Blog</div>
+                  </a>
+
+                  <a href="">
+                    <div class="flex items-center">
+                      <div class="nav-text">Docs</div>
+                      <img
+                        src="images/redirect-icon.svg"
+                        class="w-5 h-5"
+                        draggable="false"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 pt-20">
+              <div class="bg-[#d9d9d980] h-[0.5px] w-full"></div>
+              <div class="flex justify-between w-full">
+                <div class="flex items-center gap-2">
+                  <a href="">
+                    <p
+                      class="text-[rgba(255,255,255,0.50)] text-xs not-italic font-normal leading-[normal] font-nunito uppercase"
+                    >
+                      Privacy Policy
+                    </p>
+                  </a>
+                  <p class="bg-[rgba(255,255,255,0.50)] w-[1px] h-4">|</p>
+                  <a href="">
+                    <p
+                      class="text-[rgba(255,255,255,0.50)] text-xs not-italic font-normal leading-[normal] font-nunito uppercase"
+                    >
+                      Terms of use
+                    </p>
+                  </a>
+                </div>
+                <div class="flex items-center gap-4">
+                  <a
+                    href="https://x.com/ArkaNetwork_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/twitter.png"
+                      alt="twitter-logo"
+                      draggable="false"
+                    />
+                  </a>
+                  <a
+                    href="https://discord.com/invite/pErZgnnp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/discord.png"
+                      alt="discord-logo"
+                      draggable="false"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-small lg:hidden gap-4">
+        <a href="index.html">
+          <img src="images/arka-logo.svg" alt="arka-logo" draggable="false" />
+        </a>
+        <p
+          class="text-white text-center text-xs not-italic font-extralight leading-[normal] font-nunito"
+        >
+          A unified platform for sovereign and decentralised AI agents.
+        </p>
+        <div class="h-[1px] w-full bg-[#D9D9D980]"></div>
+        <div class="flex items-center gap-2">
+          <a href="privacyPolicy.html" target="_blank">
+            <p
+              class="text-[rgba(255,255,255,0.50)] text-[10px] not-italic font-normal font-nunito uppercase"
+            >
+              Privacy Policy
+            </p>
+          </a>
+          <p class="bg-[rgba(255,255,255,0.50)] w-[1px] h-3">|</p>
+          <a href="termsOfUse.html" target="_blank">
+            <p
+              class="text-[rgba(255,255,255,0.50)] text-[10px] not-italic font-normal font-nunito uppercase"
+            >
+              Terms of use
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Hamburger menu functionality
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+    const hamburgerIcon = document.getElementById("hamburgerIcon");
+    const closeIcon = document.getElementById("closeIcon");
+
+    closeIcon.classList.add("hideButton");
+    hamburgerBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+      if (closeIcon.classList.contains("hideButton")) {
+        closeIcon.classList.remove("hideButton");
+        closeIcon.classList.add("showButton");
+
+        hamburgerIcon.classList.remove("showButton");
+        hamburgerIcon.classList.add("hideButton");
+      } else {
+        closeIcon.classList.remove("showButton");
+        closeIcon.classList.add("hideButton");
+
+        hamburgerIcon.classList.remove("hideButton");
+        hamburgerIcon.classList.add("showButton");
+      }
+    });
+  </script>
+  <script src="layers.js"></script>
+</html>

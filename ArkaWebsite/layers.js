@@ -151,6 +151,9 @@ const typeText = (elementId, text, delay = 100, callback = null) => {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
+      console.log('====================================');
+      console.log("entryyyy ss",entry.target.classList.contains("November-Blog"), entry.isIntersecting);
+      console.log('====================================');
       if (entry.isIntersecting) {
         if (entry.target.className.includes("web-arkabuilds-section")) {
           const line1 = document.getElementById("Arkabuilds");
@@ -280,6 +283,11 @@ const observer = new IntersectionObserver(
           line1.classList.remove("hideLine");
 
           typeText("termsofuse", "Terms of use", 50);
+        } else if (entry.target.className.includes("November-Blog")) {
+          const line1 = document.getElementById("novemberBlog");
+          line1.classList.remove("hideLine");
+
+          typeText("novemberBlog", "Monthly Summary November", 50);
         }
         observer.unobserve(entry.target);
       }
@@ -386,11 +394,18 @@ const sectionPrivacyPolicy = () => {
   if (PrivacyPolicy) {
     observer.observe(PrivacyPolicy);
   }
-}
+};
 const sectionTermsOfUse = () => {
-  const TermsofUse= document.querySelector(".Terms-Use");
+  const TermsofUse = document.querySelector(".Terms-Use");
   if (TermsofUse) {
     observer.observe(TermsofUse);
+  }
+};
+
+const sectionNovemberBlog = () => {
+  const novemberBlog = document.querySelector(".novemberBlog");
+  if (novemberBlog) {
+    observer.observe(novemberBlog);
   }
 }
 
@@ -420,6 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sectionInternalBlogTwo();
   sectionPrivacyPolicy();
   sectionTermsOfUse();
+  sectionNovemberBlog();
 });
 
 // Optional: Add resize handler
