@@ -110,7 +110,7 @@ const handleScroll = () => {
     window.requestAnimationFrame(() => {
       const content = document.querySelector(".content");
       const scrollPosition = content.scrollTop;
-      const windowHeight = window.innerHeight/1;
+      const windowHeight = window.innerHeight/1.45;
 
       // Calculate which section is currently in view
       const nextSection = Math.round(scrollPosition / windowHeight);
