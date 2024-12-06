@@ -666,18 +666,6 @@ video {
   margin-top: 130px;
 }
 
-.mt-\[180px\] {
-  margin-top: 180px;
-}
-
-.mt-\[240px\] {
-  margin-top: 240px;
-}
-
-.mt-\[300px\] {
-  margin-top: 300px;
-}
-
 .mt-\[260px\] {
   margin-top: 260px;
 }
@@ -704,10 +692,6 @@ video {
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .h-2 {
@@ -783,10 +767,6 @@ video {
   width: 2.5rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-2 {
   width: 0.5rem;
 }
@@ -850,11 +830,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.touch-pan-x {
-  --tw-pan-x: pan-x;
-  touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
 }
 
 .grid-cols-1 {
@@ -1143,13 +1118,12 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[54px\] {
+  font-size: 54px;
 }
 
 .text-\[64px\] {
@@ -1185,18 +1159,9 @@ video {
   line-height: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-\[54px\] {
-  font-size: 54px;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -2176,6 +2141,10 @@ header {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[100px\] {
+    font-size: 100px;
   }
 
   .lg\:leading-\[120px\] {
