@@ -110,7 +110,7 @@ const handleScroll = () => {
     window.requestAnimationFrame(() => {
       const content = document.querySelector(".content");
       const scrollPosition = content.scrollTop;
-      const windowHeight = window.innerHeight/1.4;
+      const windowHeight = window.innerHeight / 1.4;
 
       // Calculate which section is currently in view
       const nextSection = Math.round(scrollPosition / windowHeight);
@@ -220,10 +220,10 @@ const observer = new IntersectionObserver(
               line3.classList.remove("hideLine");
               typeText("sovereign", "Sovereign", 50, () => {
                 line4.classList.remove("hideLine");
-                typeText("decentralize", "Decentralized", 50)
-              })
-            })
-          })
+                typeText("decentralize", "Decentralized", 50);
+              });
+            });
+          });
         } else if (entry.target.className.includes("why-exist")) {
           const line1 = document.getElementById("centralized");
           const line2 = document.getElementById("sover");
@@ -237,7 +237,6 @@ const observer = new IntersectionObserver(
               typeText("border", "Borderless", 50);
             });
           });
-          
         } else if (entry.target.className.includes("ai-developer")) {
           const line1 = document.getElementById("build");
           const line2 = document.getElementById("scale");
@@ -251,7 +250,7 @@ const observer = new IntersectionObserver(
               typeText("monetize", "Monetize", 50);
             });
           });
-        }else if (entry.target.className.includes("want-to-build")) {
+        } else if (entry.target.className.includes("want-to-build")) {
           const line1 = document.getElementById("wantto");
           line1.classList.remove("hideLine");
 
@@ -261,12 +260,12 @@ const observer = new IntersectionObserver(
           line1.classList.remove("hideLine");
 
           typeText("blog", "Blog", 50);
-        }else if (entry.target.className.includes("Blog-One")) {
+        } else if (entry.target.className.includes("Blog-One")) {
           const line1 = document.getElementById("blogOne");
           line1.classList.remove("hideLine");
 
           typeText("blogOne", "Monthly Summary October", 50);
-        } else if (entry.target.className.includes("Blog-two")) {
+        } else if (entry.target.className.includes("Blog-Two")) {
           const line1 = document.getElementById("blogTwo");
           line1.classList.remove("hideLine");
 
@@ -282,7 +281,7 @@ const observer = new IntersectionObserver(
 const sectionOneTyping = () => {
   const line1 = document.getElementById("Liberating");
   const line2 = document.getElementById("Sovereignty");
-  if(line1 && line2){
+  if (line1 && line2) {
     line1.classList.remove("hideLine");
     typeText("Liberating", "Liberating AI", 50, () => {
       line2.classList.remove("hideLine");
@@ -290,8 +289,6 @@ const sectionOneTyping = () => {
     });
   }
 };
-
-
 
 const sectionThreeTyping = () => {
   const arkaBuildSection = document.querySelector(".web-arkabuilds-section");
@@ -336,43 +333,43 @@ const sectionTwoAboutusTyping = () => {
   if (OpenSecure) {
     observer.observe(OpenSecure);
   }
-}
+};
 const sectionFourAboutusTyping = () => {
   const WhyweExist = document.querySelector(".why-exist");
   if (WhyweExist) {
-    observer.observe(WhyweExist)
+    observer.observe(WhyweExist);
   }
-}
+};
 const sectionOneAiDeveloperTyping = () => {
   const AiDeveloper = document.querySelector(".ai-developer");
   if (AiDeveloper) {
-    observer.observe(AiDeveloper)
+    observer.observe(AiDeveloper);
   }
-}
+};
 const sectionWantToBuildUs = () => {
   const WantTobuild = document.querySelector(".want-to-build");
   if (WantTobuild) {
-    observer.observe(WantTobuild)
+    observer.observe(WantTobuild);
   }
-}
+};
 const sectionBlog = () => {
   const BlogSection = document.querySelector(".blog-section");
   if (BlogSection) {
-    observer.observe(BlogSection)
+    observer.observe(BlogSection);
   }
-}
+};
 const sectionInternalBlogOne = () => {
   const InternalBlogOne = document.querySelector(".Blog-One");
   if (InternalBlogOne) {
-    observer.observe(InternalBlogOne)
+    observer.observe(InternalBlogOne);
   }
-}
+};
 const sectionInternalBlogTwo = () => {
   const InternalBlogTwo = document.querySelector(".Blog-Two");
   if (InternalBlogTwo) {
-    observer.observe(InternalBlogTwo)
+    observer.observe(InternalBlogTwo);
   }
-}
+};
 
 // Scroll event listener with throttling
 document
@@ -385,7 +382,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sectionOneTyping();
 
-  
   sectionThreeTyping();
   sectionFourthTyping();
   sectionFifthTyping();
