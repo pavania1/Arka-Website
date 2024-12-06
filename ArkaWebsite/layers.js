@@ -270,6 +270,16 @@ const observer = new IntersectionObserver(
           line1.classList.remove("hideLine");
 
           typeText("blogTwo", "Introducing Arka Network", 50);
+        } else if (entry.target.className.includes("Privacy-Policy")) {
+          const line1 = document.getElementById("privacyPolicy");
+          line1.classList.remove("hideLine");
+
+          typeText("privacyPolicy", "Privacy Policy", 50);
+        } else if (entry.target.className.includes("Terms-Use")) {
+          const line1 = document.getElementById("termsofuse");
+          line1.classList.remove("hideLine");
+
+          typeText("termsofuse", "Terms of use", 50);
         }
         observer.unobserve(entry.target);
       }
@@ -371,6 +381,19 @@ const sectionInternalBlogTwo = () => {
   }
 };
 
+const sectionPrivacyPolicy = () => {
+  const PrivacyPolicy = document.querySelector(".Privacy-Policy");
+  if (PrivacyPolicy) {
+    observer.observe(PrivacyPolicy);
+  }
+}
+const sectionTermsOfUse = () => {
+  const TermsofUse= document.querySelector(".Terms-Use");
+  if (TermsofUse) {
+    observer.observe(TermsofUse);
+  }
+}
+
 // Scroll event listener with throttling
 document
   .querySelector(".content")
@@ -395,6 +418,8 @@ document.addEventListener("DOMContentLoaded", () => {
   sectionBlog();
   sectionInternalBlogOne();
   sectionInternalBlogTwo();
+  sectionPrivacyPolicy();
+  sectionTermsOfUse();
 });
 
 // Optional: Add resize handler
