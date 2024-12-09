@@ -775,8 +775,16 @@ video {
   width: 2rem;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-full {
@@ -1944,8 +1952,8 @@ header {
     width: 2.25rem;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
+  .lg\:w-\[30\%\] {
+    width: 30%;
   }
 
   .lg\:w-\[50\%\] {
