@@ -233,7 +233,7 @@ const observer = new IntersectionObserver(
           const line3 = document.getElementById("border");
 
           line1.classList.remove("hideLine");
-          typeText("centralized", "Centralized", 50, () => {
+          typeText("centralized", "Decentralized", 50, () => {
             line2.classList.remove("hideLine");
             typeText("sover", "Sovereign", 50, () => {
               line3.classList.remove("hideLine");
