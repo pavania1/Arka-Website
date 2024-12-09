@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="aos/aos/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -235,6 +236,8 @@
               <div class="h-1 w-full bg-[#09090a]"></div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="1600"
               class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-6 md:gap-4 sm:gap-4 xs:gap-2"
             >
               <a
@@ -544,7 +547,9 @@
       </div>
     </div>
   </body>
+  <script src="aos/aos/dist/aos.js"></script>
   <script>
+    AOS.init();
     // Hamburger menu functionality
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navMenu = document.getElementById("nav-menu");
