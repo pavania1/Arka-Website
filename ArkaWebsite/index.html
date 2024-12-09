@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="aos/aos/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -204,6 +205,8 @@
                 </div>
               </div>
               <div
+                data-aos="fade-up"
+                data-aos-duration="1600"
                 class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-2 lg:gap-6"
               >
                 <div class="agents-grid gap-2 lg:gap-6 p-4 lg:p-6">
@@ -1308,13 +1311,16 @@
                   <span class="font-bold"
                     >Stay tuned for our public testnet launch</span
                   >
-                 
                 </p>
               </div>
 
               <div class="custom-btn !w-fit cursor-disabled">Stay tuned</div>
             </div>
-            <div class="flex relative overflow-hidden w-full lg:w-[50%]">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1600"
+              class="flex relative overflow-hidden w-full lg:w-[50%]"
+            >
               <video
                 src="videos/InterchainAgent.mp4"
                 class="w-full h-full object-left object-cover"
@@ -1674,6 +1680,8 @@
               </p>
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="1600"
               class="flex flex-col gap-6 w-full h-full overflow-y-scroll scrollbar-hide"
             >
               <div class="faqs-grid flex flex-col">
@@ -1897,7 +1905,11 @@
                 autonomous AI agents.
               </div>
             </div>
-            <div class="grid grid-cols-3 gap-6 hidden lg:grid">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1600"
+              class="grid grid-cols-3 gap-6 hidden lg:grid"
+            >
               <a
                 href="blogs.html"
                 class="block transition transform hover:scale-105 hover:shadow-lg cursor-pointer"
@@ -2379,7 +2391,11 @@
       </div>
     </div>
   </body>
+
+  <script src="aos/aos/dist/aos.js"></script>
   <script>
+    AOS.init();
+
     // Hamburger menu functionality
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navMenu = document.getElementById("nav-menu");

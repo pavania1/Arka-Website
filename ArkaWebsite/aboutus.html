@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="aos/aos/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -135,7 +136,7 @@
             </header>
 
             <!-- Content Section -->
-            <section class="flex flex-1 w-full h-full pb-40 lg:pb-20 ">
+            <section class="flex flex-1 w-full h-full pb-40 lg:pb-20">
               <div
                 class="flex flex-col relative w-full h-full justify-end items-start px-6 lg:px-0 lg:mt-[100px]"
               >
@@ -170,7 +171,11 @@
               <div
                 class="flex flex-col lg:flex-row pt-1 lg:pt-10 px-6 lg:px-0 w-full"
               >
-                <div class="flex flex-col w-full md:w-[35%] lg:w-[50%] pr-5">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1600"
+                  class="flex flex-col w-full md:w-[35%] lg:w-[50%] pr-5"
+                >
                   <div
                     class="font-inter text-[#09090A] not-italic leading-[100px] lg:block hidden mb-10"
                   >
@@ -204,6 +209,8 @@
                   </div>
                 </div>
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1600"
                   class="text-[#09090A] text-[40px] lg:text-[90px] not-italic font-black leading-[54px] lg:leading-[120px] font-inter !lg:mt-10 open-secure"
                 >
                   <span class="line hideLine" id="open">Open</span> <br />
@@ -235,7 +242,11 @@
           <div
             class="flex flex-col lg:flex-row gap-10 lg:gap-20 pt-10 lg:pt-20"
           >
-            <div class="text-white not-italic font-inter">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1600"
+              class="text-white not-italic font-inter"
+            >
               <p
                 class="text-4xl lg:text-[90px] font-light leading-[54px] lg:leading-[120px]"
               >
@@ -260,7 +271,11 @@
                 <span class="text-4xl lg:text-[90px] font-light">future</span>
               </p>
             </div>
-            <div class="flex flex-col gap-1 lg:gap-10">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1600"
+              class="flex flex-col gap-1 lg:gap-10"
+            >
               <div
                 class="text-[rgba(255,255,255,0.50)] text-sm lg:text-xl not-italic font-extralight leading-[33px] font-nunito"
               >
@@ -292,7 +307,11 @@
               <div
                 class="flex flex-col lg:flex-row pt-1 lg:pt-10 px-6 lg:px-0 w-full"
               >
-                <div class="flex flex-col w-full md:w-[35%] lg:w-[50%]">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1600"
+                  class="flex flex-col w-full md:w-[35%] lg:w-[50%]"
+                >
                   <div
                     class="font-inter text-[#09090A] not-italic leading-[120px] lg:block hidden pb-20"
                   >
@@ -330,9 +349,12 @@
                   </div>
                 </div>
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="1600"
                   class="text-[#09090A] text-[40px] lg:text-[90px] not-italic font-black leading-[54px] lg:leading-[120px] font-inter lg:pl-10 !lg:mt-10 why-exist"
                 >
-                  <span class="line hideLine" id="centralized">Decentralized</span
+                  <span class="line hideLine" id="centralized"
+                    >Decentralized</span
                   ><br />
                   <span class="line hideLine" id="sover">Sovereign</span>
                   <br />
@@ -857,7 +879,9 @@
       </div>
     </div>
   </body>
+  <script src="aos/aos/dist/aos.js"></script>
   <script>
+    AOS.init();
     // Hamburger menu functionality
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navMenu = document.getElementById("nav-menu");
