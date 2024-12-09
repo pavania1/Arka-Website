@@ -1083,13 +1083,12 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-\[10vw\] {
+  font-size: 10vw;
 }
 
 .text-\[32px\] {
@@ -1127,30 +1126,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[15vw\] {
-  font-size: 15vw;
-}
-
-.text-\[14vw\] {
-  font-size: 14vw;
-}
-
-.text-\[10vw\] {
-  font-size: 10vw;
-}
-
-.text-\[13vw\] {
-  font-size: 13vw;
-}
-
-.text-\[12vw\] {
-  font-size: 12vw;
-}
-
-.text-\[11vw\] {
-  font-size: 11vw;
 }
 
 .font-bold {
