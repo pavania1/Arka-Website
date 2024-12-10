@@ -1369,7 +1369,7 @@
                 <span class="hideLine" id="faqs">FAQs</span>
               </h1>
               <p
-                class="text-[rgba(255,255,255,0.50)] text-sm lg:text-xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
+                class="text-[rgba(255,255,255,0.50)] pr-5 text-sm lg:text-xl not-italic font-extralight leading-[21px] lg:leading-[33px] font-nunito"
               >
                 We've collected the most commonly asked questions to help you
                 find the answers you need.
@@ -1403,14 +1403,16 @@
                     class="cursor-pointer w-6 h-6 lg:w-8 lg:h-8 object-contain"
                   />
                 </div>
-                <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
-                >
-                  Sovereign AI agents are autonomous programs that operate
-                  independently on the blockchain without needing constant
-                  permission from central authorities. Think of them as
-                  self-running AI that makes its own decisions while staying
-                  secure and transparent.
+                <div id="faq-content-wrapper" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div
+                    class="answer faq-content text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
+                  >
+                    Sovereign AI agents are autonomous programs that operate
+                    independently on the blockchain without needing constant
+                    permission from central authorities. Think of them as
+                    self-running AI that makes its own decisions while staying
+                    secure and transparent.
+                  </div>
                 </div>
               </div>
               <div class="faqs-grid flex flex-col">
@@ -1436,13 +1438,15 @@
                     class="cursor-pointer w-6 h-6 lg:w-8 lg:h-8"
                   />
                 </div>
-                <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
-                >
+                <div id="faq-content-wrapper" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div
+                    class="answer faq-content text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
+                  >
                   Regular AI agents need constant permission from central
                   systems to operate. Sovereign AI agents work independently on
                   the blockchain, making their own decisions and managing
                   themselves.
+                </div>
                 </div>
               </div>
 
@@ -1470,12 +1474,14 @@
                     onclick="toggleAnswer(this)"
                   />
                 </div>
-                <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
-                >
+                <div id="faq-content-wrapper" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div
+                    class="answer faq-content text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
+                  >
                   It's a system that helps multiple AI agents work together and
                   make decisions as a group, without needing a central
                   authority.
+                </div>
                 </div>
               </div>
               <div class="faqs-grid flex flex-col">
@@ -1501,9 +1507,10 @@
                     class="cursor-pointer w-6 h-6 lg:w-8 lg:h-8"
                   />
                 </div>
-                <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
-                >
+                <div id="faq-content-wrapper" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div
+                    class="answer faq-content text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
+                  >
                   With Arka, you can:
                   <ul>
                     <li>&#8226; Build independent AI agents</li>
@@ -1512,6 +1519,7 @@
                     <li>&#8226; Make money from your AI creations</li>
                     <li>&#8226; Trade AI agents in our marketplace</li>
                   </ul>
+                  </div>
                 </div>
               </div>
               <div class="faqs-grid flex flex-col">
@@ -1537,13 +1545,14 @@
                     class="cursor-pointer w-6 h-6 lg:w-8 lg:h-8"
                   />
                 </div>
-                <div
-                  class="answer hidden text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
-                >
+                <div id="faq-content-wrapper" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div
+                    class="answer faq-content text-[rgba(255,255,255,0.90)] text-xs lg:text-lg not-italic font-extralight leading-normal lg:leading-[33px] pl-0 lg:pl-8 whitespace-normal break-words"
+                  >
                   <p>
                     Join our
                     <a
-                      href="https://discord.com/invite/saB935uvu2"
+                      href="https://discord.com/invite/pErZgnnp"
                       target="_blank"
                       class="interchainAgent-text"
                       >Discord</a
@@ -1557,26 +1566,24 @@
                     >. <br />
                     Our team and community members are always happy to help!
                   </p>
+                  </div>
                 </div>
               </div>
 
               <script>
                 function toggleAnswer(iconElement) {
                   const faqsGrid = iconElement.closest(".faqs-grid");
-                  const answer = faqsGrid.querySelector(".answer");
-                  const actualIconElement =
-                    faqsGrid.querySelector("#toggle-icon");
-                  // Toggle visibility of the answer
-                  if (answer.classList.contains("hidden")) {
-                    answer.classList.remove("hidden");
-                    actualIconElement.src = "images/remove.svg";
-                    // iconElement.classList.remove("w-8", "h-8");
-                    // iconElement.classList.add("w-5", "h-5");
-                  } else {
-                    answer.classList.add("hidden");
+                  const contentWrapper = faqsGrid.querySelector('#faq-content-wrapper');
+                  const content = contentWrapper.querySelector('.faq-content');
+                  const actualIconElement = faqsGrid.querySelector("#toggle-icon");
+                  if (contentWrapper.style.height && contentWrapper.style.height !== '0px') {
+                    // Collapse the content
+                    contentWrapper.style.height = '0';
                     actualIconElement.src = "images/add.svg";
-                    // iconElement.classList.remove("w-5", "h-5");
-                    // iconElement.classList.add("w-8", "h-8");
+                  } else {
+                    actualIconElement.src = "images/remove.svg";
+                    // Expand the content
+                    contentWrapper.style.height = `${content.scrollHeight}px`;
                   }
                 }
               </script>
