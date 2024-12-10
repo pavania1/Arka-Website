@@ -151,13 +151,6 @@ const typeText = (elementId, text, delay = 100, callback = null) => {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log("====================================");
-      console.log(
-        "entryyyy ss",
-        entry.target.classList.contains("November-Blog"),
-        entry.isIntersecting
-      );
-      console.log("====================================");
       if (entry.isIntersecting) {
         if (entry.target.className.includes("web-arkabuilds-section")) {
           const line1 = document.getElementById("Arkabuilds");
