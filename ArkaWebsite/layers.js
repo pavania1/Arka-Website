@@ -151,9 +151,13 @@ const typeText = (elementId, text, delay = 100, callback = null) => {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log('====================================');
-      console.log("entryyyy ss",entry.target.classList.contains("November-Blog"), entry.isIntersecting);
-      console.log('====================================');
+      console.log("====================================");
+      console.log(
+        "entryyyy ss",
+        entry.target.classList.contains("November-Blog"),
+        entry.isIntersecting
+      );
+      console.log("====================================");
       if (entry.isIntersecting) {
         if (entry.target.className.includes("web-arkabuilds-section")) {
           const line1 = document.getElementById("Arkabuilds");
@@ -228,16 +232,16 @@ const observer = new IntersectionObserver(
             });
           });
         } else if (entry.target.className.includes("why-exist")) {
-          const line1 = document.getElementById("centralized");
+          const line1 = document.getElementById("border");
           const line2 = document.getElementById("sover");
-          const line3 = document.getElementById("border");
+          const line3 = document.getElementById("centralized");
 
           line1.classList.remove("hideLine");
-          typeText("centralized", "Decentralized", 50, () => {
+          typeText("border", "Borderless", 50, () => {
             line2.classList.remove("hideLine");
             typeText("sover", "Sovereign", 50, () => {
               line3.classList.remove("hideLine");
-              typeText("border", "Borderless", 50);
+              typeText("centralized", "Decentralized", 50);
             });
           });
         } else if (entry.target.className.includes("ai-developer")) {
@@ -407,7 +411,7 @@ const sectionNovemberBlog = () => {
   if (novemberBlog) {
     observer.observe(novemberBlog);
   }
-}
+};
 
 // Scroll event listener with throttling
 document
