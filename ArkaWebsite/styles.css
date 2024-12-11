@@ -155,7 +155,7 @@ header {
     @apply p-4;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .layer-slide {
     @apply flex-[0_0_100%] max-w-full p-2;
   }
